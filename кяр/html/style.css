@@ -1,0 +1,19 @@
+.bo {
+border-spacing: 0;
+}
+.w {
+    background: white;
+    height: 70px;
+    width: 60px;
+}
+.b {
+    background: black;
+    height: 70px;
+    width: 60px;
+}
+
+.g{
+    background: green;
+    height: 30px;
+    width: 30px;
+}

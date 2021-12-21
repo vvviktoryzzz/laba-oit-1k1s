@@ -1,0 +1,21 @@
+<html>
+<body>
+    <script  language="JavaScript">
+    document.write('<b>Exercise 2</b>  <br> '); 
+var arr1 = new Array("pow", "pop", "push", "shift", "round", "floot", "sliсe", "sort");
+var arrM = arr1.slice(0, 1); 
+arrM = arrM.concat(arr1.slice(4, 6)); 
+var arrA = arr1.slice(1, 4);  
+arrA = arrA.concat(arr1.slice(6)); 
+arrM.unshift("exp");
+arrA.push("concat");
+document.write("Array: " + arr1 + "<br>");
+document.write(" length: " + arr1.length + "<br>");
+document.write("Math array: " + arrM + "<br>");
+document.write(" length: " + arrM.length + "<br>");
+document.write("Array array: " + arrA + "<br>");
+document.write(" length: " + arrA.length + "<br>");
+document.write(' <br>  '); 
+    </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="l2.css"?>
+<!DOCTYPE INVENTORY [
+<!ELEMENT INVENTORY (NAME,SPET,KOL,BALL,ADRESS)>
+    <!ELEMENT NAME (#PCDATA)>
+    <!ELEMENT SPET (#PCDATA)>
+    <!ELEMENT KOL (#PCDATA)>
+    <!ELEMENT BALL (#PCDATA)>
+    <!ELEMENT ADRESS (#PCDATA)>  
+]>
+<INVENTORY>
+	
+      <NAME>БГТУ</NAME>
+      <SPET>ДЭиВИ</SPET>
+      <KOL>60</KOL>
+	<BALL>286</BALL>
+      <ADRESS>г. Минск</ADRESS>
+  
+      <NAME>БГУ</NAME>
+      <SPET>ПОИТ</SPET>
+      <KOL>85</KOL>
+	<BALL>306</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   
+      <NAME>БНТУ</NAME>
+      <SPET>ИСИТ</SPET>
+      <KOL>25</KOL>
+	<BALL>296</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   
+</INVENTORY>
+
+
+

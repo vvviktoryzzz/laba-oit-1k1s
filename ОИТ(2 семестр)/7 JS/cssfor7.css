@@ -1,0 +1,17 @@
+body{
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(fff.png);
+color: white;
+font-family: cursive;
+}
+.name{
+   text-align: center;
+   font-size: 25px;
+}
+fieldset{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+img{
+    margin-left: 550px;
+}

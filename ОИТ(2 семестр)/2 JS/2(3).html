@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(3) JS</title>
+<script type='text/javascript'>
+document.write('<table>');
+var pi=3.14;
+var i=0;
+var a=9;
+document.write('<tr>');
+document.write('<td>'+"Радиус"+'</td>');
+document.write('<td>'+"Площадь круга"+'</td>');
+document.write('<td>'+"Длина окружности"+'</td>');
+document.write('</tr>');
+var a2;
+var pls;
+var dln;
+do
+{
+document.write('<tr>');
+document.write('<td>'+a.toFixed(1)+'</td>');// toFixed-сколько знаков после запятой, округление
+a2=Math.pow(a,2);
+pls=a2*pi;
+dln=a*2*pi;
+document.write('<td>'+pls.toFixed(1)+'</td>');
+document.write('<td>'+dln.toFixed(1)+'</td>');
+document.write('</tr>')
+a=a+0.3;
+i++;
+}while(i<=10)
+document.write('</table>');
+</script>
+<style>
+    table,td {
+        border: 5px solid rgb(253, 182, 182);
+        padding: 5px 10px;
+       
+        text-align: center;
+        }
+    td {
+        width: 15px;
+        color: blueviolet;
+            }
+    
+    </style>
+</head>
+</html>
+    

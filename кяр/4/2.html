@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script langage="JavaScript">
+             function Students(name, lastname, fiz, mat, inf) {
+        this.name = name;
+        this.lastname = lastname;
+        this.fiz = fiz;
+        this.mat = mat;  
+        this.inf = inf; 
+        this.ball = function ball() 
+        { document.write("Средний балл = ", (this.fiz+this.mat+this.inf)/3 , "<br\>");}
+     }
+std1 = new Students('Наталья','Иванова', 7, 9, 10);
+std2 = new Students('Пётр','Сидоров', 6, 5, 8);
+std3 = new Students('Екатерина','Петрова', 9, 8, 10);
+std4 = new Students('Евгений','Кот', 8, 10, 10);
+document.write("Результат:", "<br\>");
+document.write(std1.name, ' ', std1.lastname,"<br>", "Оценки: </br> по математике ", std1.mat, " по физике ", std1.fiz," по информатике ",std1.inf,"<br\>");
+std1.ball();
+document.write(std2.name,' ', std2.lastname,"<br>", "Оценки:</br> по математике ", std2.mat, " по физике ", std2.fiz," по информатике ",std2.inf,"<br\>");
+std2.ball();
+document.write(std3.name, ' ', std3.lastname,"<br>", "Оценки:</br> по математике ", std3.mat, " по физике ", std3.fiz," по информатике ",std3.inf,"<br\>");
+std3.ball();
+document.write(std4.name, ' ', std4.lastname,"<br>", "Оценки: </br> по математике ", std4.mat, " по физике ", std4.fiz," по информатике ",std4.inf,"<br\>");
+std4.ball();
+Students.prototype.grup = this.grup;
+std1.grup=5;
+std2.grup=4;
+std3.grup=1;
+std4.grup=6;
+document.write(std1.name + ' ' + std1.lastname + ' группа: ' + std1.grup + '<br\>');
+document.write(std2.name + ' ' + std2.lastname + ' группа: ' + std2.grup + '<br\>');
+document.write(std3.name + ' ' + std3.lastname + ' группа: ' + std3.grup + '<br\>');
+document.write(std4.name + ' ' + std4.lastname + ' группа: ' + std4.grup + '<br\>');
+</script>
+    </body>
+</html>
+ 

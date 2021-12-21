@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>сайтик</title>
+<style type="text/css">
+   *{/*универсальный селектор*/
+    margin: 0;
+    padding: 0;
+    }
+    header {
+    background: #B5CDE7;
+    color: #9f41a7;
+    text-transform: uppercase;/*капс*/
+    text-align: center;/*в центре*/
+    width: calc(100vw-40px);/*ввел ширину*/
+    padding: 20px;
+    }
+    section {
+    display: flex;
+    }
+    nav {
+    background: #e4aae9;
+    padding: 20px;
+    max-width: 100px;/*макс ширина*/
+    }
+    h4 {
+    margin-bottom: 15px;
+    position: relative;/*Положение элемента устанавливается относительно его исходного места*/
+    left: -16px;
+    font-weight: bold;/*жирный*/
+    font-size: 20px;/*размер*/
+    }
+    article {
+    padding: 20px;
+    }
+    h2 {
+    text-transform: uppercase;/*капс*/
+    text-align: center;
+    padding-bottom: 15px/*низ полей*/
+    }
+    p {
+    margin-bottom: 15px;/* величина отступа от нижнего края элемента*/
+    }
+    img {
+    float: left;/*Обтекание по левому краю*/
+    height: 200px;
+    margin-right: 15px;/*отступы от правого края*/
+    margin-bottom: 15px;/*от низа*/
+    }
+    footer {
+    background: #B5CDE7;
+    color: #9f41a7;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    }
+    @media screen and (max-width: 500px){/*медиа запрос для других устройств*/
+    nav {
+    background: none;
+    max-width: 100vw;
+    position: relative;
+    order: 2; /*определяет порядок, используемый для размещения flex элементов в их flex контейнере*/
+    margin: 0 15px 15px 15px;
+    padding: 0;
+    }
+    h4{
+    margin-bottom: 5px;
+    left: 0;
+    }
+    li {
+    display: inline;/*содержимое блочных элементов начинается с того места, где окончился предыдущий элемент*/
+    margin-right: 5px;
+    }
+    section {
+    display: flex;
+    flex-direction: column;/*Главная ось располагается вертикально и направлена сверху вниз, получается в столбик*/
+    }
+    article {
+    order: 1;
+    }
+    img {
+    float: none;/*выравнивание элемента никак не задается*/
+    position: relative;
+    margin-right: 0;
+    }
+    header,footer{
+        display: none;
+    }
+    }
+</style>
+</head>
+<body>
+<header>Привет участникам соревнований!</header><!-- тег отвечает за шапку сайта с заголовком-->
+<section><!--Задаёт раздел документа, может применяться для блока новостей, контактной информации-->
+<nav><!--задает навигацию по сайту-->
+<h4>Виды спорта:</h4>
+<ul>
+<li><a href="#">конькобежный спорт</a></li>
+<li><a href="#">биатлон</a></li>
+<li><a href="#">футбол</a></li>
+<li><a href="#">стрельба из лука</a></li>
+<li><a href="#">прыжки в длину</a></li>
+<li><a href="#">прыжки в высоту</a></li>
+<li><a href="#">фигурное катание</a></li>
+</ul>
+</nav>
+<article><!--задает содержание сайта вроде новости, статьи-->
+<h2>футбол</h2>
+<img src="football.jpg">
+<p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+<p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.</p>
+</article>
+</section>
+<footer>главное не победа, а участие!</footer><!--задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа-->
+</body>
+</html>

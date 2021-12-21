@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script>
+    function x(form){
+    check1=document.getElementById(1)
+    check2=document.getElementById(2)
+    if (check1.checked){
+        document.write(form.a.value)
+    }
+    if (check2.checked){
+        document.write(form.b.value)
+    }
+        document.write(form.text.value)
+    }
+
+
+</script>
+    </head>
+    <body>
+<form>
+    <textarea name="text" ></textarea>
+    <input id = '1' type='checkbox' name="a" value="1"> 1
+    <input id='2' type='checkbox' name="b" value="2"> 2
+    <input type="button" value="применить"  onclick="x(form)">
+    </form>
+
+    </body>
+</html>

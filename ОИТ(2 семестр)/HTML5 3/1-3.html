@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>1-3</title>
+        <style type="text/css">
+        body{background-color:#f4f1de}
+        a{
+          color: rgb(0, 0, 0);
+        }
+        a:hover {color: #e07a5f;}
+        </style>
+    </head>
+    <body>
+        <header>
+                <h1>Заполните форму:</h1>
+        </header>
+        <nav><a href='#inf'>Основная информация</a> | <a href="#ev">Video/audio</a> | <a href="#f">В конец сайта</a></nav>
+        <br><br><br><br>
+            
+             
+    <form>
+        <footer id='inf'>
+            <figcaption><b><mark>Основная информация </mark></b></figcaption>
+          <p><label for="name">ФИО:</label><input type="text" name="fullname" id="name" autocomplete="on"/ autofocus/ placeholder="Ваше ФИО"></p>
+          <p><label for="number">Курс:</label><input type="number" min="1" max="4" name="course" placeholder="Курс"></p>
+          <p><label for="number">Номер группы:</label><input type="number" min="1" max="10" name="group" placeholder="Номер группы"></p>
+          <p><label for="email">Ваш e-mail:</label><input type="email" name="email" placeholder="Адрес электронной почты"></p>
+          <p><label for="number">Ваш номер телефона:</label><input type="tel" name="number" placeholder="Номер телефона"></p>
+        </footer>
+      <br>
+    <label>Ваша специальность: 
+      <datalist id="spec">     <!--Создает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.-->
+        <select name="spec">
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ИСиТ">ИСиТ</option>
+            <option value="ПОИМБС">ПОИМБС</option>
+            <option value="ДЭиВИ">ДЭиВИ</option>
+         </select>
+        </datalist>
+        <input type="text" name="spec" list="spec" multiple/> 
+     </label>
+     <br><br>
+
+       Год вашего рождения:
+      <input type="number"
+      min="1997"
+      max="2004"
+      step="1"
+      value="1997">
+    
+   
+    <label>Дата заполнения формы:
+        <input type="date" value="2021-01-01"
+       min="2020-12-01" max="2022-01-01"></label>
+    
+    <label> Текущее время:
+    <input type="time" id="time" ></label>
+    
+    <br>
+    <p><label for="color">Выбери цвет: </label><input type="color" id="color"></p>
+    
+    <p><input type="submit" value="Отправить информацию"></p>
+    </form>
+      <br><br>
+
+<fieldset id='ev'>
+    <p><b><mark>ЛСП-Синее</mark></b></p>
+	<audio src="Lsp-sinee_Laylo.me.mp3" controls="controls"></audio>
+<br>
+<br>
+	<video src="ЛСП - Синее.webm" width="500" height="300" controls="controls" ></video>
+<br>
+</fieldset>
+      
+      
+<footer id='f'>
+    <p><b><mark>Фото студента</mark></b></p>
+     <nav>
+		<img src="2.jpg" width="400" height="400">
+	</nav>
+</footer>
+</body>
+</html>

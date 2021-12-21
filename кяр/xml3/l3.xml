@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="l3.xsl"?>
+<INVENTORY>
+	
+      <NAME>БГТУ</NAME>
+      <SPET>ДЭиВИ</SPET>
+      <KOL>60</KOL>
+	<BALL>286</BALL>
+      <ADRESS>г. Минск</ADRESS>
+
+      <NAME1>БГУ</NAME1>
+      <SPET1>ПОИТ</SPET1>
+      <KOL1>30</KOL1>
+	<BALL1>306</BALL1>
+      <ADRESS1>г. Минск</ADRESS1>
+  
+</INVENTORY>

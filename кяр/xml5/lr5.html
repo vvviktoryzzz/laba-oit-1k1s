@@ -1,0 +1,51 @@
+<html>
+    
+    <head>
+        <script>
+            var xml;
+           
+
+            function fun1() {
+                if (window.DOMParser) 
+            { // Firefox, Chrome, Opera и др.
+                var parser=new DOMParser();
+                var xmlDoc=parser.parseFromString(xml, "text/xml");
+            }
+            else //Internet Explorer
+            {
+                var xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async=false;
+                xmlDoc.loadXML(xml);
+                                        }
+//                var parser = new DOMParser();
+//                var xmlDoc = parser.parseFromString(xml, "text/xml");
+                var persons = xmlDoc.getElementsByTagName("person");
+                var output = document.getElementById("temp");
+                var name = persons[0].getElementsByTagName("name")[0].innerHTML;
+                var surname = persons[0].getElementsByTagName("surname")[0].innerHTML;
+                var year = persons[0].getElementsByTagName("year")[0].innerHTML;
+                var ball = persons[0].getElementsByTagName("ball")[0].innerHTML;
+    
+                output.innerHTML = '<b>имя:</b>' + name + '<br/><b>фамилия:</b> ' + surname + '<br/><b>год рождения:</b>' + year + '<br/><b>оценка:</b> ' + ball + '<br/>';
+            }
+    
+            function processFiles(files) { 
+                var file = files[0];
+                var reader = new FileReader(); 
+                reader.onload = function(e) {
+                    xml = e.target.result;
+                }
+                reader.readAsText(file); 
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="button" value="Получить информацию о студенте" onclick="fun1()">
+        <input type="file" onchange="processFiles(this.files)">
+        <div id = "temp">    
+        </div>
+    
+    </body>
+    
+    </html>

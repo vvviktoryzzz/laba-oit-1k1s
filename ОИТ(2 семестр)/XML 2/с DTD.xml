@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+
+<!DOCTYPE specialty [ 
+<!ELEMENT specialty (university+)>
+<!ELEMENT university (name,city,points,plan)> 
+<!ELEMENT name (#PCDATA)> <!--разбираемые текстовые данные-->
+<!ELEMENT city (#PCDATA)> 
+<!ELEMENT points (#PCDATA)> 
+<!ELEMENT plan (#PCDATA)>
+]> 
+
+<specialty>
+    <university>
+        <name>БГТУ</name>
+        <city>Минск</city>
+        <points>302(бюджет)/229(платно)</points>
+        <plan>90 человек</plan>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <city>Минск</city>
+        <points>329(бюджет)/258(платно)</points>
+        <plan>60 человек</plan>
+    </university>
+    <university>
+        <name>ГрГУ</name>
+        <city>Гродно</city>
+        <points>286(бюджет)/210(платно)</points>
+        <plan>120 человек</plan>
+    </university>
+</specialty>

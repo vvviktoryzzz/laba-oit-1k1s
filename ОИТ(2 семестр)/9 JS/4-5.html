@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+function f(x) 
+{    
+   if (document.forms[0].k[0].checked) { 
+   return -x * x; //возвращает значение соответсвтующее выбранному уравнению
+   } 
+   else if (document.forms[0].k[1].checked) { 
+   return -x * x * x; 
+   } 
+   else if (document.forms[0].k[2].checked) { 
+   return 10 * Math.cos(x); 
+   } 
+   else if (document.forms[0].k[3].checked) { 
+   return 10 * Math.sin(x); 
+   } 
+}
+
+
+function graph() {   
+   var graph = document.getElementById("graph"); 
+   var canvas = graph.getContext("2d");//возвращает контекст рисования на холсте, или null, если идентификатор контекста не определен
+   canvas.clearRect(0,0,400,400);
+   
+   canvas.beginPath(); //начать процесс отрисовки
+   
+   var y0 = graph.height / 2; 
+   var x0 = graph.width / 2; 
+   
+   canvas.strokeStyle = document.forms[0].color.value; 
+   for (var x = -graph.width; x < graph.width; x += 0.1) { 
+   var y = f(x); 
+   canvas.lineTo(6* x + x0, y + y0);  //создаёт шаблон линии но не отрисовывает её
+   } 
+ 
+   canvas.stroke(); //отрисовывает линию по шаблону выше
+   
+   }
+        
+        
+        </script>
+    </head>
+    <body>
+        <form style="position: absolute; top: 0px; left: 10px"> 
+            <p>График:</p> 
+            <input type="radio" name="k" value="1"> y=x^2 
+            <input type="radio" name="k" value="2"> y=x^3 
+            <input type="radio" name="k" value="3"> y=sin(x) 
+            <input type="radio" name="k" value="4"> y=cos(x) <br> <br> 
+            Цвет: 
+            <select name="color" > 
+            <option>Red</option> 
+            <option>Yellow</option> 
+            <option>Aqua</option> 
+            <option>Coral</option>
+            </select> 
+            <br> <br> 
+            <input type="button" value="Рисовать" onClick="graph()"> 
+            </form> 
+            <canvas id="graph" width="400px" height="400px" 
+            style="position: absolute; top: 155px; left: 10px; border:1px solid #999999"></canvas> 
+    </body>
+</html>

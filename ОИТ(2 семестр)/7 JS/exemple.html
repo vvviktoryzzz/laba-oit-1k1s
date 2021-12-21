@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+   function vivod(form){
+select=form.select.value
+radio=form.a.value
+chbox1 = document.getElementById('q');
+chbox2 = document.getElementById('w');
+if(chbox1.checked){
+document.write(form.r.value);
+}
+if(chbox2.checked){
+document.write(form.t.value);
+}
+document.write(form.a.value);
+document.write(form.select.value);
+
+}
+</script>
+</head>
+<body>
+    <form>
+        <input id="q" type='checkbox' name='r' value=' ОАИП'  />
+        ОАИП <br/>
+        <input id="w" type='checkbox' name='t' value=' ОИТ' />
+        ОИТ <br/>
+        <input type='radio' name='a' value='пример 1'> пример 1
+        <select name='select'>
+            <option>а</option>
+            <option>б</option>
+        </select>
+        <input type="button" value="Применить" onclick="vivod(form)" /><br><br/>
+</form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя первая страница(с JS)</title>
+    <meta charset="utf-8"/>
+
+    <style type="text/css">
+        .butt{
+          width: 200px;
+          font-family: inherit;
+          border: 0;
+          border-radius: 5px;
+          background: #e0a1f0;
+          color: #fff;
+          padding: 8px 16px;
+          font-size: 18px;
+          margin-top: 50px;
+          margin-left: 150px;
+        }
+    </style>
+
+<script type='text/javascript'>
+    function fun1() {
+        let tg = new String();
+        for (let i=0; i < document.all.length; i++) {
+        tg = tg + document.all[i].tagName + " " + i + document.all[i].nodeType+"<br>"; }
+                document.write(tg);
+            }
+    
+    function fun2() {
+        let tg = new String();
+        for (let i=0; i < document.body.childNodes.length; i++) {
+        if (document.body.childNodes[i].nodeType == 1) {
+        tg = tg + document.body.childNodes[i].tagName + "<br>";}  }
+                document.write(tg);
+            }
+       
+        </script>
+</head>
+<body>
+    <h1 align="center">Я,<a href="#">Миринская Каролина Андреевна</a> изчучаю <font color="red">HTML</font> И CSS.</h1>
+    <h2 align="center">Краткая биография Ю.А.Гагарина</h2>
+    <h3 align="center">Детство</h3>
+    <p><font color ="navy"><font size=5><font face="mv boli">Гагарин Юрий Алексеевич родился 9 марта 1934 года в деревне Клушино Смоленской области. В 1941 году будущий космонавт пошел в школу, однако из-за немецкой оккупации обучение пришлось прервать до 1943 года.
+        В 1945 году семья Гагарина переехала в город Гжатск. Окончив в 1949 году шестой класс, Юрий Алексеевич поступил в <span id = "span" style = "background-color:rgb(0, 183, 255)">Люберецкое ремесленное училище</span>, одновременно учился в школе рабочей молодежи</font><font></font></font></p>  
+     <h3 align="center">Начало лётной службы</h3>
+     <p><font color ="purple"><font size=4><font face="colonna mt">С 1954 года Юрий Алексеевич начинает заниматься в Саратовском аэроклубе. В 1955 году он совершил свой <span style = "background-color:rgb(234, 0, 255)">первый полет</span> на самолете Як-18. В 1955 году Гагарина по призыву направили в Оренбургское авиационное училище.</font></font></font></font></p>
+     <h3 align="center">Полёт в космос</h3>
+     <p><font color ="pink"><font face="impact">12 апреля 1961 года корабль <span style = "background-color:orangered">«Восток»</span> с Гагариным на борту вышел в космос и сделал оборот вокруг Земли. Сразу после полета Гагарина повысили в звании до майора. Космонавту организовали пышную встречу в Москве. Во время митинга на Красной площади, Хрущев сообщил о присвоении Юрию Алексеевичу званий Герой Советского Союза и «Летчик-космонавт СССР».</font></font></p>
+        <h2 align="center">Список покупок</h2>
+        <ol>
+
+            <font size=5> <li>Аптека</li>
+            <ul type=circle>
+            <li>таблетки от кашля</li>
+            <li>антисептик</li>
+            </ul>
+            <li>Продуктовый магазин</li>
+            <ul type=disk>
+            <li>хлеб</li>
+            <li>молоко</li>
+            <li>сметана</li>
+            </ul>
+            <li>Магазин одежды</li>
+            <ul type=square>
+            <li>свитер</li>
+            <li>футболка</li>
+            </ul>
+            </font>
+            </ol>
+                <h2 align="center">Таблица,содержащая результаты сессии</h2>
+                <table border="1">
+                    <tr>
+                        <th >ФИО</th>
+                        <th colspan='3'><a href="#">Миринская Каролина Андреевна</a></th>
+                    </tr>
+                    <tr><td><img src='cat.jpg' height = '200' width = '200'></td><td colspan='3'>Адрес:ул.Белорусская 21,блок 703А</td></tr>
+                    <tr><td rowspan='6' >1 семестр 2020/2021 уч.года</td><td>дата</td><td>предмет</td><td>оценка</td></tr>
+                    <tr><td> 31.12.2020</td> <td > ОАиП </td > <td id = "m1">6</td></tr>
+                    <tr><td > 05.01.2021</td> <td > Физика </td> <td id = "m2">9</td></tr>
+                    <tr><td > 11.01.2021</td> <td > ОИТ </td> <td id = "m3">4</td></tr>
+                    <tr><td> 16.01.2021</td> <td > Математика </td > <td id = "m4">6</td></tr>
+                    <tr><td > 22.01.2021</td> <td > АЛОЦВМ </td> <td id = "m5">8</td></tr>
+
+                </table>
+
+<input class="butt" type=button value="Задание 1" onclick="fun1()">
+<input class="butt" type=button value="Задание 2" onclick="fun2()">
+        
+        <div>
+            <script>
+                for (var i = 0; i < document.all.length; i++)
+                        {
+                            var list_childs = document.all[i].tagName;
+                            if (list_childs == 'SPAN')
+                            {
+                                var span = document.all[i].innerHTML;
+                                document.write(span);
+                                break;
+                            }
+                        }
+                        document.write('<br><br>');
+                        document.write(document.getElementsByTagName('span')[0].innerHTML);
+                        document.write('<br><br>');
+                        document.write( document.getElementById('span').innerHTML);
+                        document.write('<br><br>');
+            </script>
+            <script>
+                var oaip = +(document.getElementById('m1').innerHTML);
+                var ph   = +(document.getElementById('m2').innerHTML);
+                var oit =  +(document.getElementById('m3').innerHTML);
+                var mat =  +(document.getElementById('m4').innerHTML);
+                var alo =  +(document.getElementById('m5').innerHTML);
+                var avg = (oaip+ph+oit+mat+alo)/5;
+                document.write(avg.toFixed(3));
+                document.getElementsByTagName('span')[1].innerHTML += avg;
+            </script>  
+        </div>
+</body>
+</html>

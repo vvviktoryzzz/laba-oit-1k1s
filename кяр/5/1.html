@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <script type="text/javascript">
+function fun1() {
+    var tm = new String();
+    for(var i=0; i<document.all.length; i++) {
+    tm += document.all[i].tagName + " " + i + "<br>"; }
+            document.write(tm);}
+function fun2(){
+    var tm = new String();
+    for(var i=0; i<document.body.childNodes.length; i++) {
+   if(document.body.childNodes[i].nodeType == 1){tm += document.body.childNodes[i].tagName + "<br>";}  }
+            document.write(tm);
+    }
+function fun3 (){
+    var tm = new String();
+    for (var i = 0; i < document.all.length; i++) {
+        if (document.all[i].tagName == "SPAN") {
+            tm += document.all[i].innerHTML + "<br>";}
+    }
+//            tm +=document.getElementsByTagName("span")[0].innerHTML + "<br>";
+//            tm += document.getElementById("firstSpan").innerHTML + "<br>";
+			document.write(tm); 
+    }
+function fun4 (){
+            oaip = new Number(document.getElementsByTagName('td')[10].innerHTML);
+            ph = new Number(document.getElementsByTagName('td')[13].innerHTML);
+            oit = new Number(document.getElementsByTagName('td')[16].innerHTML);
+            math = new Number(document.getElementsByTagName('td')[19].innerHTML);
+            pol = new Number(document.getElementsByTagName('td')[22].innerHTML);
+			av = (oaip + ph + oit + math + pol) / 5;
+
+            span = document.getElementsByTagName("span")[0];
+            span.innerHTML += " " + av+" ";
+}
+
+    </script>
+    </head>
+    <body>
+<input type=button value="Задание 1" onclick="fun1()">
+<input type=button value="Задание 2" onclick="fun2()">
+<input type=button value="Задание 3" onclick="fun3()">
+        <p><span>Средний балл: </span></p>
+<input type=button value="Задание 4" onclick="fun4()">
+<br>
+<br>
+<br>
+<br>
+        
+<h1 align=center > Я,<a href='C:\Users\Katya\Desktop\html\html2_.html'> Курочкина Екатерина</a>, изучаю <font color="Thistle" >HTML</font> и CSS </h1>
+
+<h2 align=center><font face = 'Segoe Script'> Моя биография</font> </h2>
+
+<h3><i> Я и мои родители</i></h3>
+
+<p><span  id = "firstSpan"> Я</span> родилась 27 ноября 2001 года в городе Мозырь. Мою <span>маму </span>зовут Курочкина Ольга Михайловна, она работает ревизором на НПЗ. Моего<span> папу</span> зовут Курочкин Константин Алексеевич, он является заместителем начальника группы компаний "Экспонент".</p>
+
+<h3><i> Учёба </i></h3>
+
+<p> В 6 лет я пошла учиться в среднюю <span>школу</span> № 7 города Мозыря. На данный момент я студент первого курса, факультета информационных технологий Белорусского государственного технологического<span> университета</span>.</p>
+
+<h3><i> Мои хобби </i></h3>
+
+<p>Также я закончила <span>художественную школу</span>. Перепробовала много разных <span>занятий</span>(восточные танцы, тестопластика, акробатика, большой теннис, игра на гитаре, пианино, делала разные вещи из подручных материалов).</p> 
+
+<h2 align=center><font face = 'Segoe Script'> Мои бабушки и дедушки</font> </h2>
+<ol> 
+<li><b>По маминой линии</b></li>
+<ul style=circle>
+<li> Ленская Раиса Пантелеевна</li>
+<li> Ленский Михаил Петрович</li>
+</ul>
+<li><b> По папиной линии</b></li>
+<ul type=square>
+<li>Курочкина Татьяна Кирилловна</li>
+<li>Курочкин Алексей Михайлович</li>
+</ul>
+<li><b> kkkkk</b></li>
+<ul type=circle>
+<li>zzzz</li>
+<li>nnnn</li>
+</ul>
+</ol>
+
+    <h2 align=center><font face='Segoe Script'> Результаты сессии </font></h2>
+<table bgcolor='MistyRose' border='20' width='100%'  height="480" >
+
+<tr align="center" valigan="top"  > 
+<td > ФИО </td> <td colspan='3'><a href='C:\Users\Katya\Desktop\html\html2_.html'> Курочкина Екатерина Константиновна</a> </td>
+</tr>
+
+<tr align="center" valigan="top" >
+<td><img src='me.jpg'  height = '200' width = '200'></td> <td colspan='3' > Адрес: ул. Белорусская, 21 </td>
+</tr>
+
+<tr align="center" valigan="top"  >
+<td rowspan='6' > 1 семестр 2019/2020 уч. года </td> 
+<td > Дата </td> <td > Предмет </td> <td > Оценка </td>
+</tr>
+
+<tr align="center" valigan="top"  >
+<td> 31.12.2019</td> <td > ОАиП </td> <td > 6 </td>
+</tr>
+
+<tr align="center" valigan="top"  >
+<td > 5.01.2020</td> <td > Физика </td> <td > 9 </td>
+</tr>
+
+<tr align="center" valigan="top" >
+<td > 11.01.2020</td> <td > ОИТ </td> <td > 4 </td>
+</tr>
+
+<tr align="center" valigan="top" >
+<td> 16.01.2020</td> <td > Математика </td> <td> 6 </td>
+</tr>
+
+<tr align="center" valigan="top"  >
+<td > 22.01.2020</td> <td > АЛОЦВМ </td> <td> 8 </td>
+</tr>
+</table>
+</body>
+</html>

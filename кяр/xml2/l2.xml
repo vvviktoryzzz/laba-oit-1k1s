@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="l2.css"?>
+
+<INVENTORY  xmlns:xsi="http://www.w3.org/2001/XMLSchema" 
+xsi:schemaLocation = "shem.xsd">
+	
+      <NAME>БГТУ</NAME>
+      <SPET>ДЭиВИ</SPET>
+      <KOL>60</KOL>
+	<BALL>286</BALL>
+      <ADRESS>г. Минск</ADRESS>
+  
+      <NAME>БГУ</NAME>
+      <SPET>ПОИТ</SPET>
+      <KOL>85</KOL>
+	<BALL>306</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   
+      <NAME>БНТУ</NAME>
+      <SPET>ИСИТ</SPET>
+      <KOL>25</KOL>
+	<BALL>296</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   
+</INVENTORY>
+
+

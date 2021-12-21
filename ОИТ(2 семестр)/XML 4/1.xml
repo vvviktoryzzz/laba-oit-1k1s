@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1.xsl"?>
+<group>
+    <classmate>
+        <surname>Миринская</surname>
+        <name>Каролина</name>
+        <points>7.8</points>
+        <birth>2003 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Богдан</surname>
+        <name>Анастасия</name>
+        <points>7.2</points>
+        <birth>2003 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Порошков</surname>
+        <name>Владислав</name>
+        <points>5.5</points>
+        <birth>2000 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Войтукевич</surname>
+        <name>Валерия</name>
+        <points>4.0</points>
+        <birth>2004 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Кохнюк</surname>
+        <name>Александра</name>
+        <points>8.3</points>
+        <birth>2002 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Радивил</surname>
+        <name>Данила</name>
+        <points>5.7</points>
+        <birth>2003 год</birth>
+    </classmate>
+    <classmate>
+        <surname>Бобр</surname>
+        <name>Виктория</name>
+        <points>6.3</points>
+        <birth>2003 год</birth>
+    </classmate>
+</group>

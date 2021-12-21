@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(1-5) JS</title>
+<script type='text/javascript'>
+var x;
+var y;
+function f1(){
+x=prompt('Введите x:');
+y=prompt('Введите y:');
+if (x==y) {
+    document.write("Числа равны")
+} 
+else if (x>y) {
+    document.write("Числа не равны(x > y)")
+    }
+else{
+    document.write("Числа не равны(x < y)")
+    }
+}
+
+
+
+var a;
+var b;
+function f2()
+{
+    y=prompt('Введите ваше число:')
+if (y==34 || y>35)
+   alert('Правильное значение');
+   else
+   alert('Не правильное значение');   
+}
+
+</script>
+<style type="text/css">
+.butt{
+  width: 200px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 50px;
+  background: #88caf7;
+  color: rgb(10, 7, 7);
+  padding: 80px 16px;
+  font-size: 18px;
+  margin-left: 100px;
+}
+.butt2{
+  width: 100px;
+  font-family:fantasy;
+  border: 4px;
+  border-color: royalblue;
+  background: #061824;
+  color: rgb(230, 244, 248);
+  padding: 8px 16px;
+  font-size: 18px;
+  margin-left: 300px;
+}
+</style>
+</head>
+<body>
+<input class="butt" type='button' value='Example 1' onclick='f1()' />
+<input class="butt2" type='button' value='Example 2' onclick='f2()' />
+</body>
+</html>

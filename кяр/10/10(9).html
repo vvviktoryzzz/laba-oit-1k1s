@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Перемещаемые текстовые области</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <style>
+        div{ font-size:50px;}
+    </style>
+</head> 
+<div>
+    <div id="text" style="position:absolute;" >TEXT</div> <br><br>
+    <img src=1.jpg id="image" style="position:absolute;" height="200" width="250">
+</div>  
+<script> 
+
+var moveObj;
+var drag;
+    
+$("#image").click(function (e) {
+drag=true;
+x2 = e.clientX;
+y2 = e.clientY; //Координаты курсора в момент клика (относительно окна)
+moveObj=document.getElementById('image');
+}
+)
+
+$("#image").mousemove(function(e) {
+
+if (drag == true) {
+x1 = e.clientX;
+y1 = e.clientY;
+
+shift_x = x1 - x2;
+shift_y = y1 - y2;
+
+
+$("#image").css("left",moveObj.offsetLeft + shift_x );
+$("#image").css("top",moveObj.offsetTop + shift_y );
+x2 = x1;
+y2 = y1;}
+
+})
+
+$("#image").dblclick(function (e) {
+drag=false;})
+    
+    
+    
+$("#text").click(function (e) {
+drag=true;
+x2 = e.clientX;
+y2 = e.clientY; //Координаты курсора в момент клика (относительно окна)
+moveObj=document.getElementById('text');
+}
+)
+
+$("#text").mousemove(function(e) {
+
+if (drag == true) {
+x1 = e.clientX;
+y1 = e.clientY;
+
+shift_x = x1 - x2;
+shift_y = y1 - y2;
+
+
+$("#text").css("left",moveObj.offsetLeft + shift_x );
+$("#text").css("top",moveObj.offsetTop + shift_y );
+x2 = x1;
+y2 = y1;}
+
+})
+
+$("#text").dblclick(function (e) {
+drag=false;})
+</script> 
+</html>

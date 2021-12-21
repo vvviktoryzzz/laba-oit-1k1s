@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(1-1) JS</title>
+<script type='text/javascript'>
+function f1(){
+    alert('Вас приветствует учебный центр');}
+function f2(){
+    x=prompt('Введите Ваше имя:', 'Имя');
+    alert('Добро пожаловать на наши курсы,'+x);}
+function f3(){
+    y=confirm('Хотите стать Web-дизайнером?');}
+function f4(){
+    if (y==true)
+   alert('Учите стили CSS и JavaScript!');
+   else
+   alert('Упускаете время!');}
+</script>
+<style type="text/css">
+.butt{
+  width: 200px;
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px;
+  background: #f17c96;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+<input class="butt" type='button' value='Сразу откройте это' onclick='f1()' />
+<input class="butt" type='button' value='Откройте вторым' onclick='f2()' />
+<input class="butt" type='button' value='Откройте третьим' onclick='f3()' />
+<input class="butt" type='button' value='Откройте четвертым' onclick='f4()' />
+</body>
+</html>

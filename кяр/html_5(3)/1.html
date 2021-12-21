@@ -1,0 +1,71 @@
+<html>
+<body>
+        <header>
+                <h1>Регистрация </h1>
+        </header>
+              <nav><a href='#oi'>Основная информация</a> | <a href="#ev">Песня и видео</a> |
+                   <a href="#f">В конец сайта</a></nav>
+    <br><br><br>
+            
+             
+<form>
+        <footer id='oi'>
+            <figcaption><mark>Основная информация </mark></figcaption>
+          <p><label for="name">Имя </label> <input type="text" name="fullname" id="fullname" autocomplete="on"/ autofocus/ placeholder="Ваше имя"></p>
+          <p><label for="email">Ваш e-mail  </label><input type="email" name="email" placeholder="Адрес электронной почты"></p>
+          <p><label for="tel">Ваш телефон  </label><input type="tel" name="tel" placeholder="Номер телефона"></p>
+        </footer>
+      <br>
+    <label>Ваша специальность: 
+      <datalist id="sps">     <!--Создает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.-->
+        <select name="sps">
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ИСиТ">ИСиТ</option>
+            <option value="ПОИМБС">ПОИМБС</option>
+            <option value="ДЭиВИ">ДЭиВИ</option>
+         </select>
+        </datalist>
+        <input type="text" name="sp" list="sps" multiple/> 
+     </label>
+     <br><br>
+
+       Год вашего рождения:
+      <input type="number"
+      min="1950"
+      max="2016"
+      step="1"
+      value="1997">
+    
+   
+    <label>Сегодняшняя дата:
+        <input type="date" value="2020-01-01"
+       min="2018-01-01" max="2020-12-31"></label>
+    
+    <label> Время:
+    <input type="time" id="time" ></label>
+    
+    <br>
+    <p><label for="color">Выбери цвет: </label><input type="color" id="color"></p>
+    
+    <p><input type="submit" value="Отправить информацию"></p>
+</form>
+      <br><br>
+      <div id='ev'>Imagine Dragons - Warriors <br></div>
+<fieldset>
+<br>
+	<audio src="song.mp3" controls></audio>
+<br>
+<br>
+	<video src="lesson1.mp4" controls></video>
+<br>
+</fieldset>
+      
+      
+<footer id='f'>
+    <hr>
+     <nav>
+		<img src="1.jpg">
+	</nav>
+</footer>
+</body>
+</html>

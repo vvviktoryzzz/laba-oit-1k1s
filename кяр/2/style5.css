@@ -1,0 +1,35 @@
+table{ border:2;
+       color:rgb(8, 97, 8);
+       font-size: 20px;
+       background-color:rgb(223, 255, 108);
+       margin:12px;
+       padding:12px;
+       }
+.tabl{ background-color:rgb(83, 228, 95);
+       font-size: 16px;
+       margin:20px;
+       padding:20px; }
+
+table.number2 {
+        background-color:rgb(74, 8, 180);
+        margin:1px;
+        padding:2px; }
+table.number2 td{
+            background-color:rgb(71, 253, 193);
+            color:rgb(4, 56, 26);
+            font-size: 16px;
+            margin:20px;
+            padding:20px; }
+                        
+
+table.number3 {
+    background-color:rgb(64, 157, 233);
+    margin:10px;
+    padding:20px; }
+table.number3 td{
+        background-color:rgb(245, 247, 149);
+        color:rgb(14, 5, 92);
+        font-size: 18px;
+        margin:10px;
+        padding:10px; }
+                    

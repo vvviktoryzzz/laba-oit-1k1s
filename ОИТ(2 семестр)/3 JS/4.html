@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'>
+a=new Date();
+document.write("<table>");
+document.write("<tr><td> Год </td>"); 
+document.write("<td>", a.getFullYear()," </td>"); 
+document.write("</tr>"); 
+document.write("<tr><td> Месяц </td>"); 
+document.write("<td>", a.getMonth()+1," </td>"); 
+document.write("</tr>"); 
+document.write("<tr><td> День </td>"); 
+document.write("<td>", a.getDate()," </td>"); 
+document.write("</tr>"); 
+document.write("<tr><td> Часы </td>"); 
+document.write("<td>", a.getHours()," </td>"); 
+document.write("<tr><td> Минуты </td>"); 
+document.write("<td>", a.getMinutes()," </td>"); 
+document.write("<tr><td> Секунды </td>"); 
+document.write("<td>", a.getSeconds()," </td>"); 
+document.write("</tr>"); 
+document.write("</table>");
+</script>
+<style>
+table,td {
+   border-collapse: collapse;
+   border: 3px solid rgb(66, 25, 44);
+   padding: 15px;
+   margin-left: 15px;
+   background: #fab9c7;
+   } 
+</style>
+</head>
+</html>

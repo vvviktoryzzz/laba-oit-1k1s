@@ -1,0 +1,87 @@
+<!DOCYTYPE html>
+<html>
+<style type='text/css'>
+	body{
+	background-color: #894242;
+	}
+		@-webkit-keyframes anim {
+		0% {margin-left:10px;}
+		100% {margin-left:100px;background-color:#ebd4cc;}
+		}
+
+	#f1 {
+
+		box-shadow: 0 0 20px; 
+		border:2px white solid;
+		border-radius: 100px;
+		background-color:#de5b6d;
+		height:50px;
+		width:50px;      
+		animation:anim 2s 3;
+		-webkit-animation:anim 2s 3;
+
+	}
+	#f2{
+		border:2px white solid;
+		border-radius: 100px;
+		background-color:#d55c5a;
+		margin-left:150px;
+		margin-top: 150px;
+		margin-right:150px;
+		height:50px;
+		width:150px;
+
+	}
+
+			@-webkit-keyframes anim2 {
+			0% {margin-left:0px;transform: rotateZ(0deg);}
+			100% {margin-left:105px;background-image:url(a1.png);transform: rotateZ(360deg);}
+			}
+	#f3 { 
+
+		box-shadow: 0 0 20px;
+		background-image:url(a1.png);
+		height:50px;
+		width:50px;
+		animation:anim2 285ms ;
+		-webkit-animation:anim2 285ms ;  
+		border-radius: 100px;
+		-webkit-animation-play-state:paused;
+		animation-play-state:paused;
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	#f3:active{-webkit-animation-play-state:running;
+	animation-play-state:running}
+
+
+
+	#f4{
+		border:2px white solid;
+		border-radius: 100px;
+		background-color:#d55c5a;
+		margin-left:150px;
+		margin-top: 50px;
+		margin-right:150px;
+		height:50px;
+		width:150px;}
+
+	@-webkit-keyframes anim3 {
+	0% {margin-left:10px;}
+	100% {margin-left:100px;background-color:#ebd4cc;}}
+
+	
+
+	</style>
+		<body>
+			<div id="f2">
+				<div id="f1"></div>
+			</div>
+			<div id="f4">
+				<div id="f3"></div>
+			</div>
+			</div>
+	
+	</body>
+</html>

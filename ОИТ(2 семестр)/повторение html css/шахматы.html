@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+		table
+		{
+		
+			border-collapse: collapse; /*линия между ячейками теперь одна*/
+		}
+
+		table tr td
+		{
+			height:60px;
+			width:60px;
+		}
+
+		tr:nth-child(even) td:nth-child(even) /*эвэн четные*/
+		{								
+			background-color:black;					
+		}
+
+		tr:nth-child(odd) td:nth-child(odd)  
+		{										
+			background-color:black;					
+		}
+
+		tr:nth-child(odd) td:nth-child(even)  
+		{										
+			background-color:white;					
+		}
+		tr:nth-child(even) td:nth-child(odd)  
+		{										
+			background-color:white;					
+		}
+		tr:nth-child(n) td:nth-child(10)/*из всех строк берем 10-ую ячейку*/
+		{
+			background-color:rgb(6, 218, 6);
+		}
+
+		 tr:nth-child(n) td:nth-child(1)
+		{
+			background-color:rgb(6, 218, 6);
+		} 
+
+		td:first-child
+		{
+			width:30px;
+			border:solid black;
+		}
+
+		 td:last-child
+		{
+			width:30px;
+			border:solid black;
+		}
+
+		tr:first-child td:nth-child(n) /* для всех элементов первой строки*/
+		{
+			background-color:rgb(6, 218, 6);
+			height:30px;
+			border:solid black;
+		}
+
+		tr:last-child td:nth-child(n)
+		{
+			background-color:rgb(6, 218, 6);
+			height:30px;
+			width:30px;
+			border:solid black;
+		}
+	</style>
+</head>
+<body>
+<div>
+<table>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+
+</div>
+</body>
+</html>

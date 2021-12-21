@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <script type='text/javascript' src="jalaba6.js"></script>         
+    </head>
+<body>
+         <br>
+         <b>Задание 1</b> <br>
+         <br>
+        <input type="button" value="вывод первого окна" onclick="fun1()">
+        <input type="button" value="закрытие первого окна" onclick="fun2()"> 
+        <input type="button" value="вывод в первое окно" onclick="fun5()">
+        <br>
+        <br>
+        <input type="button" value="вывод второго окна" onclick="fun3()">
+        <input type="button" value="закрытие второго окна" onclick="fun4()">
+        <input type="button" value="вывод во второе окно" onclick="fun6()">
+        <br>
+        <br>
+        <br>
+        <table border=2px> 
+                <script language="JavaScript">
+                document.write('<b>Задание 2</b>  <br><br> '); 
+                document.write("<tr><td> свойство </td>"); 
+                document.write("<td> значение </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> информация о браузере пользователя </td>"); 
+                document.write("<td>", 'Информация о браузе-ре:',navigator.userAgent," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> версия браузера </td>"); 
+                document.write("<td>", navigator.appVersion," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> название браузера </td>"); 
+                document.write("<td>", navigator.appName," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> кодовое название браузера </td>"); 
+                document.write("<td>",navigator.appCodeName," </td>"); 
+                document.write("<tr><td> ОС, которую использует пользователь </td>"); 
+                document.write("<td>", navigator.platform," </td>"); 
+                document.write("<tr><td> включена ли поддержка Java в браузере </td>"); 
+                document.write("<td>", navigator.javaEnabled()," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> ширину и высоту экрана </td>"); 
+                document.write("<td>", screen.width+"  "+screen.height," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> глубину цвета </td>"); 
+                document.write("<td>", screen.colorDepth," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> URL, которые были посещены в данном окне браузера </td>"); 
+                document.write("<td>", history.length," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> URL текущего документа </td>"); 
+                document.write("<td>", location.href," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> путь к загруженному документу </td>"); 
+                document.write("<td>", location.pathname," </td>"); 
+                document.write("</tr>"); 
+                document.write("<tr><td> имя докумена загруженного документа </td>"); 
+                document.write("<td>", location.host," </td>"); 
+                document.write("</tr>"); 
+                </script>
+                </table>
+</body>
+</html>

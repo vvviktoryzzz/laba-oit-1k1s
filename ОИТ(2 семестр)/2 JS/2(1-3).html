@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(1-2) JS</title>
+<script type='text/javascript'>
+var x=105;
+var y=15;
+var c1;
+var c2;
+var c3;
+function count(x,y){
+    c1=15*x-2*y-x*4/2;
+    c2=8*x/y;
+    c3=c1%c2;
+}
+function print(text)
+{
+    document.write(text);
+}
+
+count(105,15)
+print('<br />c1='+c1);
+count(105,15)
+print('<br />c2='+c2);
+count(c1,c2)
+print('<br />c3='+c3);
+
+function ff(){
+    alert('Результат 1ой арифметической операции ' +c1 +'; Результат 2ой арифметической операции '+c2+'; Остаток от деления значения 1ого выражения на значение 2ого '+c3);
+}
+
+
+
+</script>
+<style type="text/css">
+.butt{
+  width: 200px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+  background: #b0a3f8;
+  color: rgb(12, 8, 8);
+  padding: 8px 16px;
+  font-size: 18px;
+  margin-left: 200px;
+}
+</style>
+</head>
+<body>
+<input class="butt" type='button' value='Результаты' onclick='ff()' />
+
+</body>
+</html>

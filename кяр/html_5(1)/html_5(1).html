@@ -1,0 +1,44 @@
+<html>
+    <head>
+       <title>Изучение HTML5</title> 
+       <script>
+        function geoFindMe() {
+          var output = document.getElementById("out");
+        
+          if (!navigator.geolocation){
+            output.innerHTML = "<p>Геолокация не поддерживается вашим браузером</p>";
+            return;
+          }
+        
+          function success(position) {
+            var latitude  = position.coords.latitude;
+            var longitude = position.coords.longitude;
+        
+            output.innerHTML = '<p>Широта: ' + latitude + ' <br>Долгота ' + longitude + '</p>';
+        
+          };
+        
+          function error() {
+            output.innerHTML = "Невозможно определить ваше положение";
+          };
+        
+        
+          navigator.geolocation.getCurrentPosition(success, error);
+        }
+        </script>
+    </head>
+<body>
+<h1> Я, <mark>Курочкина Екатерина</mark>, изучаю HTML5</h1>
+<fieldset>
+<br>
+	<p> Imagine Dragons - Warriors </p>
+	<audio src="song.mp3" controls></audio>
+<br>
+<br>
+	<video src="lesson1.mp4" controls></video>
+<br>
+</fieldset>
+</body>
+<p><button onclick="geoFindMe()">Показать моё местоположение</button></p>
+<div id="out"></div>
+</html>

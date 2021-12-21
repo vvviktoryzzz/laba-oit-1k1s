@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type='text/javascript'>
+document.write('<table border="1px" style="color: blue;">')
+document.write('<tr><td>' + '1) вся информация о браузере пользователя' + '</td><td>' + navigator.userAgent + '</td></tr>');
+document.write('<tr><td>' + '2) версия браузера' + '</td><td>' + navigator.appVersion + '</td></tr>');
+document.write('<tr><td>' + '3) название браузера' + '</td><td>' + navigator.appName + '</td></tr>');
+document.write('<tr><td>' + '4) кодовое название браузера' + '</td><td>' + navigator.appCodeName + '</td></tr>');
+document.write('<tr><td>' + '5) ОС, которую использует пользователь' + '</td><td>' + navigator.platform + '</td></tr>');
+document.write('<tr><td>' + '6) включена ли поддержка Java в браузере' + '</td><td>' + navigator.javaEnabled() + '</td></tr>');
+document.write('<tr><td>' + '7) ширина и высота экрана' + '</td><td>' + screen.height + 'x' + screen.width + '</td></tr>');
+document.write('<tr><td>' + '8) глубина цвета' + '</td><td>' + screen.colorDepth + '</td></tr>');
+document.write('<tr><td>' + '9) URL, которые были посещены в данном окне браузера' + '</td><td>' + History.length + '</td></tr>');
+document.write('<tr><td>' + '10) URL текущего документа' + '</td><td>' + location.href + '</td></tr>');
+document.write('<tr><td>' + '11) путь к загруженному документу' + '</td><td>' + location.pathname + '</td></tr>');
+document.write('<tr><td>' + '12) имя домена загруженного документа' + '</td><td>' + location.host + '</td></tr>');
+document.write('</table>');
+        </script>
+    </head>
+</html>

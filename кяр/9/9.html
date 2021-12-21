@@ -1,0 +1,152 @@
+<html>
+        <head>
+            <title></title>
+            <script type="text/javascript">
+var moveObj;
+var drag;
+
+function startMove(event, numb) {
+drag = true;
+x2 = event.clientX;
+y2 = event.clientY; //Координаты курсора в момент клика (относительно окна)
+
+if (numb == 2) moveObj = document.getElementById("text");
+else if (numb == 1) moveObj = document.getElementById("image");
+
+
+}
+
+function move(event, numb) {
+
+if (drag == true) {
+x1 = event.clientX;
+y1 = event.clientY;
+
+shift_x = x1 - x2;
+shift_y = y1 - y2;
+
+if (numb == 2) {
+document.getElementById('text').style.left = moveObj.offsetLeft + shift_x;
+document.getElementById('text').style.top = moveObj.offsetTop + shift_y;
+x2 = x1;
+y2 = y1;
+} else if (numb == 1) {
+document.getElementById('image').style.left = moveObj.offsetLeft + shift_x;
+document.getElementById('image').style.top = moveObj.offsetTop + shift_y;
+x2 = x1;
+y2 = y1;
+}
+}
+}
+
+
+function stopMove() {
+    drag = false
+}
+                
+function Moving() {
+    
+    x = 2;
+    y = 2;
+    corG = 0;
+    corY = "y";
+    corX = "x";
+    var timer = setInterval(function() { //
+        if (corG == 0){ x+=2; y=2;}
+        if (x == 900) corG = 1;
+        if (corG == 1){ x-=2;y--}
+        if ( x==2 ) corG = 2;
+        if (corG == 2) y++;
+        image2.style.left = eval(corX);
+        image2.style.top = eval(corY);
+        if (y == x) clearInterval(timer); //
+    }, 5)
+}  
+
+function f(x) { 
+   
+    if (document.forms[0].k[0].checked) { 
+    return -x * x; 
+    } 
+    else if (document.forms[0].k[1].checked) { 
+    return -x * x * x; 
+    } 
+    else if (document.forms[0].k[2].checked) { 
+    return 10 * Math.cos(x); 
+    } 
+    else if (document.forms[0].k[3].checked) { 
+    return 10 * Math.sin(x); 
+    } 
+    } 
+                
+function graph() { 
+   
+    var graph = document.getElementById("graph"); 
+    var canvas = graph.getContext("2d");//возвращает контекст рисования на холсте, или null, если идентификатор контекста не определен.
+    canvas.clearRect(0,0,400,400);
+    
+    canvas.beginPath(); 
+    
+    var y0 = graph.height / 2; 
+    var x0 = graph.width / 2; 
+    
+    canvas.moveTo(-5, y0);  
+    canvas.strokeStyle = document.forms[0].color.value; 
+    for (var x = -graph.width; x < graph.width; x += 0.1) { 
+    var y = f(x); 
+    canvas.lineTo(6* x + x0, y + y0);  
+    } 
+  
+    canvas.stroke();
+    
+    }
+    
+            </script>
+            <style>
+                div {
+                    font-size: 50px;
+                    width: 400px
+                }
+                
+                #image2 {
+                    position: relative;
+                }
+                
+                #image {
+                    position: absolute;
+                }
+            </style>
+        </head>
+        
+        <body>
+           <div>
+            <div id="text" style="position:absolute;" ondblclick="startMove(event,2)" onmousemove="move(event,2)" onclick="stopMove()">Текст</div><br><br>
+            <img src=1.jpg id="image" style="position:absolute;" ondblclick="startMove(event,1)" onmousemove="move(event,1)" onclick="stopMove()"><br><br><br><br><br>
+            <img src=2.jpg id="image2" onclick="Moving()"><br><br> <br>
+            </div> 
+            
+     
+<form style="position: absolute; top: 620px; left: 10px"> 
+    <p>График:</p> 
+    <input type="radio" name="k" value="1"> y=x^2 
+    <input type="radio" name="k" value="2"> y=x^3 
+    <input type="radio" name="k" value="3"> y=sin(x) 
+    <input type="radio" name="k" value="4"> y=cos(x) <br> <br> 
+    Цвет: 
+    <select name="color" > 
+    <option>IndianRed</option> 
+    <option>Yellow</option> 
+    <option>Aqua</option> 
+    <option>Coral</option>
+    </select> 
+    <br> <br> 
+    <input type="button" value="Рисовать" onClick="graph()"> 
+    </form> 
+    <canvas id="graph" width="400px" height="400px" 
+    style="position: absolute; top: 800px; left: 10px; border:1px solid #999999"></canvas> 
+            
+                
+        </body>
+        
+        </html>
+    

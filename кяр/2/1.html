@@ -1,0 +1,116 @@
+<html>
+<head>
+    <link rel="stylesheet" href="st5_1.css" type="text/css">
+<script type='text/javascript'>
+function fun11() {
+   alert('Вас приветствует учебный центр');
+}
+function fun12() {
+   var o=confirm('Хотите стать Web-дизайнером?');
+   if(o==1)
+    { alert("Учите стили CSS и JavaScript!");
+    }
+    else
+    { alert("Упускаете время!");
+    }
+}
+function fun13() {
+   var x=prompt('Введите имя:', 'Имя');
+   document.write('Добро пожаловать на наши курсы, ' +x);
+   }
+function fun2() {
+    var word1='Hello';
+var word2='World';
+var namb1=10;
+var namb2=5;
+document.write(' a+b= ' +namb1+namb2+'<br/>');
+document.write(' два слова вместе ' +word1+word2+'<br/>'); 
+document.write(' число и строка вместе ' +namb1+word1+'<br/>');
+document.write(' строка и число вместе ' +word2+namb2+'<br/>' );
+alert(' Результатом сложения строки и числ всегда будет '+word2+namb2);
+   } 
+function fun3() {
+    var x=10, y=2;
+var ex1, ex2,ex3;
+ex1=(2*x+34*y)/21*y;
+ex2=2*y*(x/6+67)/21+x-y;
+document.write(' значение 1-го уравнения  '+ ex1+'<br/>');
+document.write(' значение 2-го уравнения '+ ex2+'<br/>');
+ex3=ex2 % ex1;
+document.write('  остаток от деления 2-го уравнения на первое '+ ex3+'<br/>');
+}
+
+function fun4(){
+    nam=prompt('Введите число', 'число');
+    if (((nam<25) || (nam>=50)) && (nam!=55) && (nam%2==0) )
+    {document.write(' Правильное значение'); }
+    else{document.write(' Не правильное значение'); }
+
+}
+function fun5() {
+    var namb1=190, namb2=100; 
+    namb1=prompt(' Введите число', 'первое');
+    namb2=prompt(' Введите число', 'второе');
+    if (namb1>namb2)
+    {document.write(' Первое число больше второго'); }
+    else{ 
+        if(namb1==namb2)
+        { document.write(' Числа равны')}
+        else  {document.write(' Первое число меньше второго');} }
+    var zn;
+    (namb1=namb2)?(zn=namb1+namb2):(zn=namb1*namb2);
+    document.write('  Значение выражения = ', zn);
+}
+
+function fun6() { 
+   let den = parseInt(prompt('Введите номер дня недели','число'));
+
+switch (den)
+{
+case 1 :
+alert("понедельник");
+break;
+case 2:
+alert("вторник");
+break;
+case 3:
+alert("среда");
+break;
+case 4:
+alert("четверг");
+break;
+case 5:
+alert("пяпница");
+break;
+case 6:
+alert("суббота");
+break;
+case 7:
+alert("воскресенье");
+break;
+default:
+alert("Ввели не правильно");
+}
+}
+function fun7() {
+
+try {
+  i;
+} catch(e) {
+    alert(" Ошибка!  Потом код продолжит выполнение...");   
+}
+}
+</script>
+</head>
+<body>
+<input type='button' value='Окно оповещения' onclick='fun11()' />
+<input type='button' value='Окно подтверждения' onclick='fun12()' />
+<input type='button' value='Окно запроса' onclick='fun13()' />
+<input type='button' value='Задание 2' onclick='fun2()' />
+<input type='button' value='Задание 3' onclick='fun3()' />
+<input type='button' value='Задание 4' onclick='fun4()' />
+<input type='button' value='Задание 5' onclick='fun5()' />
+<input type='button' value='Задание 6' onclick='fun6()' />
+<input type='button' value='Задание 7' onclick='fun7()' />
+</body>
+</html>

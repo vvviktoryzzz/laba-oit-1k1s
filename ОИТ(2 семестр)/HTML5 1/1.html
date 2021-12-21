@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        body{background-color:rgb(235, 211, 184)}
+        </style>
+        <script>
+            function geoFindMe() {
+              var output = document.getElementById("out");
+              navigator.geolocation.getCurrentPosition(success, error);
+            
+              if (!navigator.geolocation){
+                output.innerHTML = "<p>Геолокация не поддерживается вашим браузером</p>";
+                return;
+              }
+            
+              function success(position) {
+                var latitude  = position.coords.latitude; //широта
+                var longitude = position.coords.longitude; //долгота
+            
+                output.innerHTML = '<p>Широта: ' + latitude + ' <br>Долгота ' + longitude + '</p>';
+            
+              };
+            
+              function error() {
+                output.innerHTML = "Невозможно определить ваше положение"; //innerHTML позволяет получить HTML-содержимое элемента в виде строки.
+              };
+            
+          
+            }
+            </script>
+    </head>
+    <body>
+        <h2 align="center">Я,<mark>Бобр Виктория Николаевна</mark>,изучаю HTML5.</h2>
+        <p><b>The Neighbourhood - Sweater Weather (Official Video)</b></p>
+        <video src="The Neighbourhood - Sweater Weather (Official Video).webm" width="500" height="300" controls="controls" ></video>
+        <p><b>ЛСП-Синее</b></p>
+        <audio src="Lsp-sinee_Laylo.me.mp3" controls="controls"></audio>
+        <p><b>Моё местоположение:</b></p>
+        <p><button onclick="geoFindMe()">Показать моё местоположение</button></p>
+        <div id="out"></div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <title>HTML5 2</title>
+<body>
+<canvas id="myCanvas" width="700" height="700" style="border:1px solid #d8cece;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle = "black";
+ctx.lineWidth = 4;
+ctx.arc(200,390, 135, 0, 2*Math.PI); //(x,y,радиус,нач_угол,конеч_угол)
+ctx.stroke();
+
+ctx.beginPath();
+ctx.fillStyle = "#ff4747";
+ctx.arc(200,390, 132, 0, Math.PI/180*105, false); //По умолчанию установлено значение false, что означает по часовой стрелке.
+ctx.lineTo(200,390);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = "#00bcb4";
+ctx.arc(200,390, 132, Math.PI/180*105, Math.PI/180*52.5 + Math.PI/180*105, false);
+ctx.lineTo(200,390);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = "#c4e86b";
+ctx.arc(200,390, 132, Math.PI/180*52.5 + Math.PI/180*105, Math.PI/180*52.5 + Math.PI/180*105 + Math.PI/180*75, false);
+ctx.lineTo(200,390);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = "#ffb547";
+ctx.arc(200,390, 132, Math.PI/180*52.5 + Math.PI/180*105 + Math.PI/180*75, 0, false);
+ctx.lineTo(200,390);
+ctx.fill();
+
+ctx.fillStyle = "#ffb547";
+ctx.fillRect(380, 334, 15, 15);
+
+ctx.fillStyle = "#ff4747";
+ctx.fillRect(380, 384, 15, 15);
+
+ctx.fillStyle = "#c4e86b";
+ctx.fillRect(380, 434, 15, 15);
+
+ctx.fillStyle = "#00bcb4";
+ctx.fillRect(380, 484, 15, 15);
+
+ctx.font = "24px Verdana";
+ctx.fillStyle='black';
+
+ctx.fillText("Сон", 420, 350);
+
+ctx.fillText("Университет", 420, 400);
+
+ctx.fillText("Лабы", 420, 450);
+
+ctx.fillText("Остальное", 420, 500);
+
+ctx.font = "25px Verdana";
+ctx.fillText("МОЙ БУДНИЙ ДЕНЬ", 200, 80);
+
+
+</script>
+
+</body>
+</html>

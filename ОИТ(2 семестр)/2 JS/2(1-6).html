@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(1-6) JS</title>
+<script type='text/javascript'>
+var x = 2;
+function f1(){
+    switch(x) {
+case 1:
+document.write("Сегодня понедельник"); break;
+case 2:
+document.write("Сегодня вторник"); break;
+case 3:
+document.write("Сегодня среда"); break;
+case 4:
+document.write("Сегодня четверг"); break;
+case 5:
+document.write("Сегодня пятница"); break;
+case 6:
+document.write("Сегодня суббота"); break;
+case 7:
+document.write("Сегодня воскресенье"); break;
+}
+}
+
+
+</script>
+<style type="text/css">
+.butt{
+  width: 10em;
+  height: 2.5em;
+  text-align: center;
+  text-shadow: 0 -2px 2px #777;
+  color: #fff;
+  border: 2px solid #F64C2B;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+  background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+  margin-left: 150px;
+}
+</style>
+</head>
+<body>
+<input class="butt" type='button' value='День недели' onclick='f1()' />
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type='text/javascript'>
+            var i = new Number(0);
+            arr = new Array();
+            function openwindow()
+            {
+            arr[i] = window.open('', i);
+            i++;
+            }
+            
+            function closewindow()
+            {
+            var num = prompt('Номер окна которое надо закрыть (начать с 0): ');
+            arr[num].close();
+            }
+
+            function putinfo()
+            {           
+            numb = prompt('Введите номер окна, в который надо поместить техст: ');
+            arr[parseInt(numb)].document.write('Имя окна: ' + arr[parseInt(numb)].name );
+            }
+        </script>
+        <style type="text/css">
+            .butt{
+              width: 200px;
+              font-family: inherit;
+              border: 0;
+              border-radius: 5px;
+              background: #f17c96;
+              color: #fff;
+              padding: 8px 16px;
+              font-size: 18px;
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>        
+                <input  class="butt" type = "button" value = "Новое окно" onclick="openwindow()">                  
+                <input  class="butt" type = "button" value = "Закрыть окно" onclick="closewindow()">                   
+                <input  class="butt" type = "button" value = "Текст в окно" onclick="putinfo()">            
+    </body>
+</html>

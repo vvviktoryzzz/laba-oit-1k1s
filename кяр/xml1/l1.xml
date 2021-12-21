@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File Name: Inventory01.xml -->
+<?xml-stylesheet type="text/css" href="1.css"?>
+<INVENTORY>
+	<BSTU>
+      <NAME>БГТУ</NAME>
+      <SPET>ДЭиВИ</SPET>
+      <KOL>60</KOL>
+	<BALL>286</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   </BSTU>
+   <BSU>
+      <NAME>БГУ</NAME>
+      <SPET>ПОИТ</SPET>
+      <KOL>85</KOL>
+	<BALL>306</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   </BSU>
+   <BNTY>
+      <NAME>БНТУ</NAME>
+      <SPET>ИСИТ</SPET>
+      <KOL>25</KOL>
+	<BALL>296</BALL>
+      <ADRESS>г. Минск</ADRESS>
+   </BNTY>
+</INVENTORY>
+
+

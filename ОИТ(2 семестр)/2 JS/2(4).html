@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(4) JS</title>
+<script type='text/javascript'>
+
+x=new Number('11');
+
+document.write('<table>');
+document.write('<tr>');
+document.write('<td>'+"Число"+'</td>');
+document.write('<td>'+"Метод"+'</td>');
+document.write('<td>'+"Результат"+'</td>');
+document.write('<td>'+"Описание метода"+'</td>');
+document.write('</tr>');
+
+document.write("<tr><td>" + x + " </td>");          
+document.write("<td > toString(16)  </td>");
+document.write("<td >" + x.toString(2) + " </td>");
+document.write("<td> Строковое представление числа в 2-ичной системе счисления </td>");
+document.write("</tr>"); 
+            
+document.write("<tr><td>" + x + " </td>");          
+document.write("<td > toExponential()  </td>");
+document.write("<td >" + x.toExponential(2) + " </td>");
+document.write("<td> Представление числа в экспоненциальной форме </td>");
+document.write("</tr>"); 
+
+document.write("<tr><td>" + x + " </td>");          
+document.write("<td > toFixed()  </td>");
+document.write("<td >" + x.toFixed(2) + " </td>");
+document.write("<td> Представление числа в форме с фиксированным количеством цифр после точки </td>");
+document.write("</tr>");
+
+document.write("<tr><td>" + x + " </td>");          
+document.write("<td> toPrecision()  </td>");
+document.write("<td>" + x.toPrecision() + " </td>");
+document.write("<td> Представление числа с заданным общим количеством значащих цифр </td>");
+document.write("</tr>"); 
+
+a=new Number('3.1943');
+
+document.write("<tr><td>" + a + " </td>");          
+document.write("<td > toString(16)  </td>");
+document.write("<td >" + a.toString(2) + " </td>");
+document.write("<td> Строковое представление числа в 2-ичной системе счисления </td>");
+document.write("</tr>"); 
+            
+document.write("<tr><td>" + a + " </td>");          
+document.write("<td > toExponential()  </td>");
+document.write("<td >" + a.toExponential(2) + " </td>");
+document.write("<td> Представление числа в экспоненциальной форме </td>");
+document.write("</tr>"); 
+
+document.write("<tr><td>" + a + " </td>");          
+document.write("<td > toFixed()  </td>");
+document.write("<td >" + a.toFixed(2) + " </td>");
+document.write("<td> Представление числа в форме с фиксированным количеством цифр после точки </td>");
+document.write("</tr>");
+
+document.write("<tr><td>" + a + " </td>");          
+document.write("<td> toPrecision()  </td>");
+document.write("<td>" + a.toPrecision() + " </td>");
+document.write("<td> Представление числа с заданным общим количеством значащих цифр </td>");
+document.write("</tr>"); 
+</script>
+<style>
+    table,td {
+        border: 3px solid rgb(253, 182, 182);
+        padding: 5px 10px;
+        margin: 10px;
+        text-align: center;
+        }
+    td {
+        width: 15px;
+        color: blueviolet;
+            }
+    
+    </style>
+</head>
+</html>

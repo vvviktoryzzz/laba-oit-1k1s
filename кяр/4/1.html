@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <script langage="JavaScript">
+            function Gruppa(n,spec,kolich, kurs) {
+this.n=n;
+this.spec=spec;
+this.kolich=kolich;
+this.kurs=kurs;
+this.add_stud=function add_stud(k) {
+this.kolich+=k;
+document.write('В группу ' + this.n + ' добавили'+ k + ' студентов.<br\>'); 
+}
+this.sub_stud= function sub_stud(k){
+this.kolich-=k;
+document.write('Из группы '+this.n+' отчислили '+k+' студентов.<br\>');
+    
+}
+}
+gr1 = new Gruppa(1, 'ПОИТ', 25, 1);
+gr2 = new Gruppa(2, 'ИСиТ', 32, 1);
+gr3 = new Gruppa(3, 'ПОИМБС', 28, 1);
+gr4 = new Gruppa(4, 'ДЭиВИ', 29, 1);
+
+    gr1.add_stud(3);
+    gr2.add_stud(2);
+    gr3.add_stud(5);
+    gr4.add_stud(1);
+    gr1.sub_stud(5);
+    gr2.sub_stud(8);
+    gr3.sub_stud(2);
+    gr4.sub_stud(0);
+    document.write("Результат:", "<br\>");
+    document.write("Номер группы ",gr1.n, " специальность ", gr1.spec, " количество ", gr1.kolich, " курс ", gr1.kurs, "<br\>");
+    document.write("Номер группы ",gr2.n, " специальность  ", gr2.spec, " количество  ", gr2.kolich, " курс ", gr2.kurs, "<br\>");
+    document.write("Номер группы ",gr3.n, " специальность  ", gr3.spec, " количество  ", gr3.kolich, " курс ", gr3.kurs, "<br\>");
+    document.write("Номер группы ",gr4.n, " специальность  ", gr4.spec, " количество  ", gr4.kolich, " курс ", gr4.kurs, "<br\>");
+    Gruppa.prototype.mark=this.mark;
+    gr4.mark=5;
+    document.write(gr4.mark);
+
+</script>
+    </body>
+</html>

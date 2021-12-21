@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'>
+var arr = new Array("pow", "pop", "push", "shift", "round", "floor", "slice", "sort");
+document.write(arr+'<br>');
+document.write('Длина 1-ого массива: '+arr.length+'<br>'+'<br>');
+
+var arrMa1 = arr.slice(0,1); //в этом абзаце формируем массив Math
+var arrMa2 = arr.slice(4,6);
+var arrM = arrMa1.concat(arrMa2);
+arrM.unshift('sin'); //в начало массива добавили элемент Math
+document.write(arrM+'<br>');
+document.write('Длина 2-ого массива: '+arrM.length+'<br>'+'<br>');
+
+
+var arrAr1 = arr.slice(1,4); //в этом абзаце формируем массив Array
+var arrAr2 = arr.slice(6,8);
+var arrA = arrAr1.concat(arrAr2);
+arrA.push('concat'); //в конец массива добавили еще один элемент Array
+document.write(arrA+'<br>');
+document.write('Длина 3-ого массива: '+arrA.length+'<br>');
+
+</script>
+</head>
+</html>

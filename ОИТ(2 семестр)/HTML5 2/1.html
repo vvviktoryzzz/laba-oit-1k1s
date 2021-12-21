@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <title>HTML5 1</title>
+<body>
+<canvas id="myCanvas" width="700" height="700" style="border:1px solid #423c3c;"></canvas>
+
+<script>
+// название    
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial serif";
+ctx.fillText("Развитие и годы ",30,50);
+
+//комментарии
+ctx.fillStyle = "black";
+ctx.font = "20px Arial serif";
+ctx.fillText("Y - годы",18,620);
+ctx.fillStyle = "black";
+ctx.font = "20px Arial serif";
+ctx.fillText("X - учебное заведение",18,600);
+
+//х у
+ctx.fillStyle = "black";
+ctx.font = "20px Arial serif";
+ctx.fillText("у",18,120);
+ctx.fillStyle = "black";
+ctx.font = "20px Arial serif";
+ctx.fillText("x",480,525);
+
+//оформляем ось у
+ctx.fillStyle = "black";
+ctx.font = "15px Arial serif";
+ctx.fillText("3",20,440);
+ctx.fillStyle = "black";
+ctx.font = "15px Arial serif";
+ctx.fillText("6",20,360);
+ctx.fillStyle = "black";
+ctx.font = "15px Arial serif";
+ctx.fillText("9",20,290);
+ctx.fillStyle = "black";
+ctx.font = "15px Arial serif";
+ctx.fillText("12",20,210);
+
+// оформляем ось х
+ctx.fillStyle = "purple";
+ctx.font = "17px Arial serif";
+ctx.fillText("Детский сад",55,520);
+ctx.fillStyle = "purple";
+ctx.font = "17px Arial serif";
+ctx.fillText("Университет",180,520);
+ctx.fillStyle = "purple";
+ctx.font = "17px Arial serif";
+ctx.fillText("Школа",334,520);
+
+//рисуем гистограммы
+ctx.fillStyle="skyblue";
+ctx.fillRect(70, 430,50, 70);
+
+var gradient = ctx.createLinearGradient(200,300, 200, 500);
+gradient.addColorStop(0, 'purple');
+gradient.addColorStop(0.3, 'orange');
+gradient.addColorStop(1, 'pink');
+ctx.fillStyle = gradient;
+ctx.fillRect(200, 400, 50, 100);
+
+var img = new Image();
+img.src = '1.jpg';
+img.onload = function() {
+  var pattern = ctx.createPattern(img, 'repeat');
+  ctx.fillStyle = pattern;
+  ctx.fillRect(335, 240, 50, 260);
+};
+ctx.fill();
+
+//рисуем оси
+ctx.moveTo(50,100);
+ctx.lineTo(40,115);
+
+ctx.moveTo(50,100);
+ctx.lineTo(60,115);
+
+ctx.moveTo(500,500);
+ctx.lineTo(490,510);
+
+ctx.moveTo(500,500);
+ctx.lineTo(490,490);
+
+ctx.moveTo(30,500);
+ctx.lineTo(500,500);
+ctx.moveTo(50,100);
+ctx.lineTo(50,530);
+ctx.stroke();
+</script>
+
+</body>
+</html>

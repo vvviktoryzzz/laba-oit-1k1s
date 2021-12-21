@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type = "text/javascript">
+function newColor(obj) { //параметр функции со значением из места ее вызова 
+obj.style.color = "red";
+}
+
+function oldColor(obj) {
+obj.style.color = "black";
+}
+
+function Font(obj) {
+obj.style.fontSize = "30px";
+}
+
+function ImageChange() {
+var image = document.getElementById("image1");{
+image.src = "1.jpg";}
+}
+
+function TextСhangeImage() {
+var image = document.getElementById("textChange")
+image.innerHTML = "<img src=1.jpg>"// innerHTML-содержимое элемента которое хранится в нем в виде строки
+}
+
+function WidthMore() {
+var obj = document.getElementById("image2");{
+obj.style.width = "400px";
+obj.style.height = "300px";} 
+}
+
+function WidthLess() {
+var obj = document.getElementById("image2");{
+obj.style.width = "300px"
+obj.style.height = "200px"}
+}
+
+function border(obj) {
+obj.style.border = "3px solid black";
+}
+</script>
+</head>
+<body>
+<div>
+<p><b>Задание 1, 2.</b></p>
+<p onmouseover = newColor(this) onMouseOut = oldColor(this) onclick = Font(this)> Этот текст меняет цвет при наведении курсора на него и увеличивается при нажатии. </p><br>
+<p><b>Задание 3. (картинка при нажатии меняется на другую)</b></p>
+<img src="2.jpg" id="image1" onclick="ImageChange()" width = "400px" height = "300px"><br>
+<p><b>Задание 4.</b></p>
+<p id='textChange' onclick="TextСhangeImage()"> Сейчас появится картинка</p><br>
+<p><b>Задание 5.</b></p>
+<img src="1.jpg" id="image2" onMouseOver="WidthMore()" onMouseOut="WidthLess()" width = "400px" height = "300px"><br>
+<p><b>Задание 6.</b></p>
+<p ondblclick=border(this) > Если нажать на этот текст, вокруг него появится цветная рамка</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+        document.write("<span id='s1'>Этот текст меняет цвет при наведении курсора на него и увеличивается при нажатии</span>");
+        document.write("<br>");
+        $("#s1").mouseout(function(){$("#s1").css("color","black")});
+        $("#s1").mouseover(function(){$("#s1").css("color","red")});
+        $("#s1").click(function(){$("#s1").css("fontSize","25px")});
+        document.write("<br>");
+
+        document.write("Картинка при нажатии меняется на другую");
+        document.write("<br>");
+        document.write("<img id='image1' src='1.jpg' height='400px' width='400px'>");
+        $("#image1").click(function(){$("#image1").attr('src','2.jpg')}); // атрибут который нужно поменять
+        document.write("<br><br>");
+
+        document.write("<span id='s2'>Сейчас вместо текста появится картинка</span><br>");
+        $("#s2").click(function(){$("#s2").html("<img src= 3.jpg>")});
+        document.write("<br>");
+
+        document.write("Тут картинка меняет размер");
+        document.write("<br>");
+        document.write("<img id='image2' src='1.jpg' height='400px' width='400px'>");
+        $("#image2").mouseover(function(){$("#image2").css("height","200px")});
+        $("#image2").mouseover(function(){$("#image2").css("width" ,"200px")});
+        $("#image2").mouseout(function(){$("#image2").css("height","400px")});
+        $("#image2").mouseout(function(){$("#image2").css("width" ,"400px")});
+        document.write("<br><br>");
+
+        document.write("<span id='s3' >Если нажать на этот текст дважды,то появится рамка</span>");
+        $("#s3").dblclick(function(){$("#s3").css("border","4px solid blue")});
+        
+    </script>
+</head>
+</html>

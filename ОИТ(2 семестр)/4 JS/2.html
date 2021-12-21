@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'>
+function Student(name,surname,oit,matem,oc){
+    this.name=name;
+    this.surname=surname;
+    this.oit=oit;
+    this.matem=matem;
+    this.oc=oc;
+    this.ns=function ns(){alert(this.name+' '+this.surname);}
+    this.ball=function ball() { document.write("Средний балл = ", (this.oit+this.matem+this.oc)/3 , "<br>");}
+}
+
+s1= new Student('Каролина','Миринская',9,9,9);
+s2= new Student('Анастасия','Богдан',10,7,9);
+s3= new Student('Виктория','Бобр',10,8,9);
+s4= new Student('Александра','Кохнюк',9,10,7);
+
+document.write(s1.name+' '+ s1.surname+"<br>"+"Оценки: </br> ОИТ: "+s1.oit+ ", математика: "+ s1.matem+", OC: "+s1.oc+"<br>");
+s1.ball();
+s1.ns();
+document.write('<br>'+'<br>');
+document.write(s2.name+' '+ s2.surname+"<br>"+"Оценки: </br> ОИТ: "+s2.oit+ ", математика: "+ s2.matem+", OC: "+s2.oc+"<br>");
+s2.ball();
+s2.ns();
+document.write('<br>'+'<br>');
+document.write(s3.name+' '+ s3.surname+"<br>"+"Оценки: </br> ОИТ: "+s3.oit+ ", математика: "+ s3.matem+", OC: "+s3.oc+"<br>");
+s3.ball();
+s3.ns();
+document.write('<br>'+'<br>');
+document.write(s4.name+' '+ s4.surname+"<br>"+"Оценки: </br> ОИТ: "+s4.oit+ ", математика: "+ s4.matem+", OC: "+s4.oc+"<br>");
+s4.ball();
+s4.ns();
+
+Student.prototype.grup = this.grup;
+s1.grup=2;
+s2.grup=2;
+s3.grup=3;
+s4.grup=3;
+document.write('<br>'+'<br>');
+document.write('Группы учащихся в списке:'+'<br>');
+document.write(s1.name + ' ' + s1.surname + ' группа номер ' + s1.grup + '<br>');
+document.write(s2.name + ' ' + s2.surname + ' группа номер ' + s2.grup + '<br>');
+document.write(s3.name + ' ' + s3.surname + ' группа номер ' + s3.grup + '<br>');
+document.write(s4.name + ' ' + s4.surname + ' группа номер ' + s4.grup + '<br>');
+
+</script>
+</head>
+</html>

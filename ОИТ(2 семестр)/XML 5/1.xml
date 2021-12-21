@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <person>
+        <name>Каролина</name>
+        <surname>Миринская</surname>
+        <year>2003</year>
+        <ball>310 баллов</ball>
+    </person>
+</student>

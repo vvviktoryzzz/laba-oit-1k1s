@@ -1,0 +1,76 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="cssfor7.1.css" type="text/css">
+        <title>Форма 1</title>
+        <script>
+function Form() {
+    var gr = document.getElementsByName('obj'); 
+    var a = "",
+        b = "",
+        c = "",
+        d = "",
+        f = "";
+    if (gr[0].checked) a = ('<li> Маринетт Дюпен-Чен');
+    if (gr[1].checked) b = ('<li> Эдриан Агрест');
+    if (gr[2].checked) c = ('<li> Габриэль Агрест');
+    if (gr[3].checked) d = ('<li> Тикки');
+    if (gr[4].checked) f = ('<li> Плагг');
+    
+    
+    document.write('<legend> Вторая форма <legend>' );
+    document.write('<form><fieldset><ul>' + a + b + c + d + f + '</ul></fieldset></form>')
+}
+function Print() {
+    let items='';
+    let t=0;
+    for (i = 0; i < 5; i++) {
+        if (document.forms[0].obj[i].checked) {
+            t=t+1;
+            items += "<li>" + document.forms[0].obj[i].value + "</li>";}
+    }
+    if(t!=0){ document.write( "<br> Зритель - " + document.forms[0].elements[1].value +
+        " ;" + document.forms[0].elements[2].value + " Понравился ли мультфильм? - " + document.forms[0].elements[3].value + "; Просмотрел  " + document.forms[0].radiobutton.value + ' сезона(ов);' +
+         " любит следующих персонажей: <ul>" +items)}
+    if(t==0)alert("Выберите персонажей.");
+    }
+        </script>
+    </head>
+    
+    <body>
+        <form>
+            <textarea rows="10" cols="20" placeholder="Miraculous Ladybag" name="textarea"></textarea><br> <br />
+            <input type='text' name='LastName' placeholder="Фамилия" /><br />
+            <input type='text' name='FirstName' placeholder="Имя" /><br><br>
+    
+                <b> Понравился мультфильм?
+                <select><option>да</option>
+                    <option>нет</option>
+                    <option>неплохой</option>
+                    
+                </select>
+    
+                <p>просмотренно сезонов</p>
+                <input type='radio' name='radiobutton' value='1' /> 1
+                <input type='radio' name='radiobutton' value='2' /> 2
+                <input type='radio' name='radiobutton' value='3' /> 3
+                <input type='radio' name='radiobutton' value='4' /> 4
+                
+                <p>Ваш любимый персонаж ?</p>
+                <input type="checkbox" name="obj" value="Маринетт Дюпен-Чен">Маринетт Дюпен-Чен
+                <input type="checkbox" name="obj" value="Эдриан Агрест">Эдриан Агрест
+                <input type="checkbox" name="obj" value="Габриэль Агрест">Габриэль Агрест
+                <input type="checkbox" name="obj" value="Тикки">Тикки
+                <input type="checkbox" name="obj" value="Плагг">Плагг
+                <br>
+                <br>
+                <br>
+
+
+                <input type="reset" value="Очистить" /><br><br> 
+                <input type="submit" value="Принять" />
+                <input type="button" value="Печать" onclick="Print()" /><br><br/>
+                
+        </form>
+    </body>
+ </html>

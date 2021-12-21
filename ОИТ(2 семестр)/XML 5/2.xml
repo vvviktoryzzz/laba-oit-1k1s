@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <person>
+        <name>Анастасия</name>
+        <surname>Богдан</surname>
+        <year>2003</year>
+        <ball>309 баллов</ball>
+    </person>
+</student>

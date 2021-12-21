@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var xml; //превращаем переменную xml строкового формата в формат XML
+function fun1() {
+    if (window.DOMParser) // Включаем обработчик XML структуры
+{
+    var parser=new DOMParser();  //дом парсер - позволяет данные из текстового формата преобразовывать в html, xml , svg формат.
+    var xmlDoc=parser.parseFromString(xml, "text/xml");//1 параметр-то что мы будем парсить, 2-MIME-тип(используется при передаче данных форм и вставки на страницу различных объектов)
+}
+else
+{
+    var xmlDoc=new ActiveXObject("Microsoft.XMLDOM"); //стандартный объект обработки XML DOM в IE
+    xmlDoc.async=false;
+    xmlDoc.loadXML(xml);
+}
+
+    var persons = xmlDoc.getElementsByTagName("person"); //Получаем массив 
+    var output = document.getElementById("temp");
+    var name = persons[0].getElementsByTagName("name")[0].innerHTML;
+    var surname = persons[0].getElementsByTagName("surname")[0].innerHTML;
+    var year = persons[0].getElementsByTagName("year")[0].innerHTML;
+    var ball = persons[0].getElementsByTagName("ball")[0].innerHTML;
+
+   document.write (output.innerHTML = '<b>Имя:</b>' + name + '<br/><b>Фамилия:</b> ' + surname + '<br/><b>Год рождения:</b>' + year + '<br/><b>Проходной балл:</b> ' + ball + '<br/>');
+}
+
+
+function processFiles(files) { //функция чтения файла после загрузки файла
+var file = files[0];
+var reader = new FileReader(); //читаем файл
+reader.onload = function(e) {
+xml = e.target.result; // Записываем в переменную содержимое файла,совершаем действия над строкой xml
+}
+reader.readAsText(file); //Указываем, что данный файл предназначен для чтения
+}
+</script>
+</head>
+<body>
+
+<input type="file" onchange="processFiles(this.files)" onclick="fun1()">
+<div id = "temp"></div>
+</body>
+</html>

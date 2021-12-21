@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2(1-2) JS</title>
+<script type='text/javascript'>
+var c1;
+var x=9;
+var y=23;
+var c2;
+var c3;
+var c4;
+function count(q,w){
+    c1=q+w;
+    c2=q+w;
+    c3=q+w;
+    c4=q+w;
+    
+}
+
+function print(text){
+    document.write(text);
+
+}
+count(10,5);
+print("c1=" + c1);
+count(x,y);
+print("<br />c2="+ c2);
+count(99,y);
+print("<br />c3="+c3);
+count(x,27);
+print("<br />c4="+c4);
+function ff(){
+    alert("Результатом сложения строки и числа всегда будет:"+c4);
+}
+</script>
+<style type="text/css">
+.butt{
+  width: 200px;
+  font-family: inherit;
+  border-color: red;
+  background: #fcfbfb;
+  color: rgb(231, 13, 13);
+  padding: 8px 16px;
+  font-size: 18px;
+  margin-left: 200px;
+}
+</style>
+</head>
+<body>
+<input class="butt" type='button' value='Результат сложения' onclick='ff()' />
+
+</body>
+</html>

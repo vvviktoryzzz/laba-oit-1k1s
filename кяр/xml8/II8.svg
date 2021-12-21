@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300mm" height="200mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 16645.46 11091.32"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#EF7F1A;stroke-width:80;stroke-miterlimit:22.9256}
+    .str1 {stroke:#A82328;stroke-width:100;stroke-miterlimit:22.9256}
+    .str2 {stroke:#008DD2;stroke-width:20;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#FFB6C1}
+    .fil2 {fill:#B0C4DE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <defs>
+  <polygon id="1" class="fil0 str0" points="3788.97,861.77 4937.23,1825.27 6085.48,2788.77 5336.01,4086.89 4586.54,5385.02 3178,4872.35 1769.45,4359.68 2029.74,2883.51 2290.03,1407.34 3788.97,1407.34 5287.91,1407.34 5548.2,2883.51 5808.49,4359.68 4399.94,4872.35 2991.4,5385.02 2241.93,4086.89 1492.46,2788.77 2640.71,1825.27 "/>
+  <path id="2" class="fil1 str1" d="M10784.79 4409.01c0,-349.02 -247.57,-631.95 -552.96,-631.95 -305.39,0 -552.96,282.93 -552.96,631.95 0,698.04 495.14,1263.91 1105.92,1263.91 610.78,0 1105.92,-565.87 1105.92,-1263.91 0,-1047.05 -742.71,-1895.86 -1658.88,-1895.86 -916.17,0 -1658.88,848.81 -1658.88,1895.86 0,1396.08 990.28,2527.82 2211.84,2527.82 1221.56,0 2211.84,-1131.74 2211.84,-2527.82"/>
+  <path id="3" class="fil2 str2" d="M4239.34 6796.71c327.77,787.32 1311.09,1180.98 1311.09,1574.64 0,393.67 -327.77,787.33 -1311.09,787.33 -983.32,0 -1311.09,-393.66 -1311.09,-787.33 0,-393.66 983.32,-787.32 1311.09,-1574.64z"/>
+ </defs>
+    <use xlink:href="#1"  x="2000" y="0" opacity="0.3"/>
+    <use xlink:href="#2"  x="3000" y="2000" />
+    <use xlink:href="#3"  x="300" y="10" />
+    <use xlink:href="#3"  x="5000" y="10" />
+</svg>

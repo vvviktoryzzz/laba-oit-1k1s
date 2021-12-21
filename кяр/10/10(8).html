@@ -1,0 +1,49 @@
+<html>
+    <head>
+    
+        <title>Лабораторная 8</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    </head>
+    <script>
+        document.write("<span id='span1'>TEXT</span><br>");
+        $("#span1").mouseout(function() { $("#span1").css("color", "black") });
+        $("#span1").mouseover(function() { $("#span1").css("color", "red") });
+        document.write("</br>");
+        
+        document.write("<span id='span2'>TEXT</span><br>");
+        $("#span2").click(function() { $("#span2").css("fontSize", "3em") });
+        $("#span2").dblclick(function() { $("#span2").css("fontSize", "2em") });
+         document.write("</br>");
+        
+        document.write("<img id='ing' src='1.jpg'><br>")
+        $("#ing").click(function() { $("#ing").attr("src", "2.jpg") });
+        $("#ing").dblclick(function() { $("#ing").attr("src", "1.jpg") });
+         document.write("</br>");
+        
+        document.write("<span id='img2'>Нажми сюда</span><br>")
+        $("#img2").click(function() { $("#img2").html("<img width='300px' src= 2.jpg>") });
+         document.write("</br>");
+        
+        document.write("<img id='img3' src='1.jpg'>")
+        $("#img3").mouseover(function() { $("#img3").css({ "width": "400px" }) });
+        $("#img3").mouseout(function() { $("#img3").css({ "width": "300px" }) });
+        document.write("<p>Нажми сюда</p>")
+        $("p").dblclick(function() { $("p").css({ "border": "1px solid red" }) })
+    </script>
+   
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+

@@ -1,0 +1,9 @@
+table{
+       color:rgb(58, 4, 42);
+       font-size: 20px;
+       background-color:rgb(224, 170, 213);
+       margin:10px;
+       padding:5px;
+       text-align: center;
+}
+td {border:2px solid black;}

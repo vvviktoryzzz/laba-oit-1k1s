@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    </head>
+    <body>
+
+          <img src=2.jpg height="300px" width="300px" id="myimg" style = "position: relative; cursor: pointer; top:200px">
+
+        <script type="text/javascript">
+
+$("#myimg").click(function(){
+    $("#myimg").animate({
+        left:"+=200px", top:"-=200px"}, 500) 
+        .animate({left:"+=200px", top:"+=400px"}, 500) 
+        .animate({left:"+=200px", top:"-=400px"}, 500) 
+        .animate({left:"+=200px", top:"+=400px"}, 500) 
+        .animate({left:"+=200px", top:"-=400px"}, 500)
+})
+
+        </script>
+    </body>
+</html>                     

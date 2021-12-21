@@ -1,0 +1,31 @@
+<html>
+<body>
+    <script  language="JavaScript">
+        arr=new Array(); 
+var pi=Math.PI;
+var e=Math.E;
+var i, max=0, min=1000, imin, imax;
+arr[0]=6*Math.pow(pi,2)+3*Math.pow(e,8);
+arr[1]=2*Math.cos(4)+Math.cos(12)+8*Math.pow(e,3);
+arr[2]=3*Math.sin(9)+Math.log(5)+8*Math.sqrt(3);
+arr[3]=2*Math.tan(5)+6*pi+8*Math.sqrt(12);
+for(i=0;i<4;i++)
+{
+   document.write('Element '+i+' =  '+arr[i]+ ' <br> '); 
+}
+    for(i=0;i<4;i++){
+        if(arr[i]<min){
+            min=arr[i];
+            imin=i;}
+    }
+        for(i=0;i<4;i++){
+        if(arr[i]>max){
+            max=arr[i];
+            imax=i;}
+    }
+    document.write('MIN ('+imin+') =  '+min+' <br> ');    
+    document.write('MAX ('+imax+') =  '+max+ ' <br> ');   
+        
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+    </head>
+    <body>
+        <svg width="1460" height="760" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <text  x="20" y="35">Текст 1</text>
+            <text  dx="300" dy="35">Текст 2</text>
+            <text  x="60" y="105" text-anchor="start">Текст 3</text>
+            <text  x="100" y="55" transform="rotate(19, 100, 155)">Текст 4</text>
+            <text  x="240" y="100" textLength="100" lengthAdjust="spacingAndGlyphs">Текст 5</text>
+            <text  x="240" y="200"><tspan style="font-family: fantasy;" dx="50" dy="10">text</tspan><tspan style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" dx="50" dy="10">text</tspan></text>
+            
+            <defs>
+                <path id="idname" fill="none" stroke="red" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145"/>
+            </defs>
+            <use xlink:href="#idname"/>
+            <text x="200" y="250">
+            <textPath xlink:href="#idname">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</textPath> 
+            </text>
+        </svg>
+    </body>
+</html>

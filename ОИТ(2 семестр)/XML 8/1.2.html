@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .s1 { font: italic 20px sans-serif; }
+            .s2 { font: bold 40px sans-serif; }
+            .s3 { font: italic 30px serif ; fill: red; }
+            .s4 { font: fantasy 20px serif ; fill: rgb(115, 137, 197); } 
+            .s5 { font: italic 40px sans-serif ; fill: rgb(243, 135, 211); } 
+            .s6 { font: Arial 30px serif ; fill: rgb(23, 6, 49); }  
+          </style>
+    </head>
+    <body>
+        <svg width="1460" height="760" xmlns="http://www.w3.org/2000/svg" version="1.1">
+           
+
+            <text  x="20" y="35" class="s1">Текст 1</text>
+            <text  dx="300" dy="35" class="s2">Текст 2</text>
+            <text  x="60" y="105" text-anchor="start" class="s3">Текст 3</text>
+            <text  x="100" y="55" transform="rotate(19, 100, 155)" class="s4">Текст 4</text>
+            <text  x="240" y="100" textLength="100" lengthAdjust="spacingAndGlyphs" class="s5">Текст 5</text>
+            <text  x="240" y="200"><tspan style="font-family: fantasy;" dx="50" dy="10" class="s6">text</tspan><tspan style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" dx="50" dy="10">text</tspan></text>
+            
+            <defs>
+                <path id="idname" fill="none" stroke="red" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145"/>
+            </defs>
+            <use xlink:href="#idname"/>
+            <text x="200" y="250">
+            <textPath xlink:href="#idname">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</textPath> 
+            </text>
+        </svg>
+    </body>
+</html>

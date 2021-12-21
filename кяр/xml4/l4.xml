@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ll4.xsl"?>
+<list>
+    <person>
+        <name>Иванов </name>
+        <surname>Петр </surname>
+        <year>2001 </year>
+        <ball>5 </ball>
+    </person>
+    <person>
+        <name>Сидоров </name>
+        <surname>Константин </surname>
+        <year>2002 </year>
+         <ball>8 </ball>
+    </person>
+    <person>
+        <name>Лебедева </name>
+        <surname>Юлия </surname>
+        <year>2002 </year>
+         <ball>6 </ball>
+    </person>
+    <person>
+        <name>Скварцова</name>
+        <surname>Екатерина </surname>
+        <year>2002 </year>
+         <ball>9 </ball>
+         </person>
+    <person>
+         <name>Орлова </name>
+        <surname>Ольга </surname>
+        <year>2001 </year>
+         <ball>4 </ball>
+    </person>
+    <person>
+         <name>Павлов</name>
+        <surname>Павел </surname>
+        <year>1999 </year>
+         <ball>10 </ball>
+    </person>
+</list>

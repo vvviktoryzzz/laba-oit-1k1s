@@ -1,0 +1,73 @@
+<html>
+    
+    <head>
+        
+        <script>
+function Form() {
+    var gr = document.getElementsByName('obj');
+    var a = "",
+        b = "",
+        c = "",
+        d = "",
+        f = "";
+    if (gr[0].checked) a = ('<li> ОИТ');
+    if (gr[1].checked) b = ('<li> ОАП');
+    if (gr[2].checked) c = ('<li> История');
+    if (gr[3].checked) d = ('<li> Физика');
+    if (gr[4].checked) f = ('<li> Математика');
+    
+    
+    document.write('<legend> Вторая форма <legend>' );
+    document.write('<form><fieldset><ul>' + a + b + c + d + f + '</ul></fieldset></form>')
+}
+function Print() {
+    let items='';
+    let t=0;
+    for (i = 0; i < 5; i++) {
+        if (document.forms[0].obj[i].checked) {
+            t=t+1;
+            items += "<li>" + document.forms[0].obj[i].value + "</li>";}
+    }
+    if(t!=0){ document.write( "<br> Студент " + document.forms[0].elements[1].value +
+        " " + document.forms[0].elements[2].value + " специальность " + document.forms[0].elements[3].value +
+        " курс " + document.forms[0].radiobutton.value + " должен сдавать следующие  предметы: <ul>" +items)}
+    if(t==0)alert("Выберите предметы.");
+    }
+        </script>
+    </head>
+    
+    <body>
+        <form>
+                <textarea rows="10" cols="20" placeholder="Факультет Информационных Технологий" name="textarea"></textarea><br> <br />
+                <input type='text' name='LastName' placeholder="Фамилия" /><br />
+                <input type='text' name='FirstName' placeholder="Имя" /><br><br>
+    
+                <b>Специальность
+                <select><option>ИСиТ</option>
+                    <option>ПОИТ</option>
+                    <option>ПОИБМС</option>
+                    <option>ДЭВИ</option>
+                </select>
+    
+                <p>Курс:</p>
+                <input type='radio' name='radiobutton' value='1' /> 1
+                <input type='radio' name='radiobutton' value='2' /> 2
+                <input type='radio' name='radiobutton' value='3' /> 3
+                <input type='radio' name='radiobutton' value='4' /> 4
+                
+                <p>Предметы:</p>
+                <input type='checkbox' name='obj' value='ОИТ' /> ОИТ
+                <input type='checkbox' name='obj' value='ОАП' /> ОАП 
+                <input type='checkbox' name='obj' value='КЯР' /> КЯР
+                <input type='checkbox' name='obj' value='Физика' /> Физика
+                <input type='checkbox' name='obj' value='Математика' /> Математика 
+                <input type='checkbox' name='obj' value='Полиграфика' /> Полиграфика
+                <input type='checkbox' name='obj' value='Теория дизайна' /> Теория дизайна<br/><br/></b>
+
+                <input type="reset" value="Очистить" /><br><br> 
+                <input type="submit" value="Принять" />
+                <input type="button" value="Печать" onclick="Print()" /><br><br/>
+                <input type="button" value="Вторая форма" onclick="Form()" />
+        </form>
+    </body>
+ </html>

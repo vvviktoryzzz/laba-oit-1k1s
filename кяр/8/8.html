@@ -1,0 +1,58 @@
+<html>
+        <head>
+            <title></title>
+            <script>
+function newColor(obj) {
+    obj.style.color = "red";
+}
+
+function oldColor(obj) {
+    obj.style.color = "blue";
+}
+
+function largeFont(obj) {
+    obj.style.fontSize = "40px";
+}
+
+function ImageChange() {
+    var image = document.getElementById("image1");{
+        image.src = "1.jpg"
+      
+    }
+}
+
+function TextСhangeImage() {
+    var image = document.getElementById("textChange")
+        image.innerHTML = "<img src=3.jpg>"
+}
+
+function WidthMore() {
+        var obj = document.getElementById("image2");{
+    obj.style.width = "600px"
+    obj.style.height = "500px"
+  }
+}
+
+function WidthLess() {
+    var obj = document.getElementById("image2");{
+    obj.style.width = "400px"
+    obj.style.height = "300px"
+    }
+}
+function border(obj) {
+    obj.style.border = "5px blue double";
+}
+            </script>
+        </head>
+        
+        <body>
+            <div>
+                <p onMouseOver=newColor(this) onMouseOut=oldColor(this) onclick=largeFont(this) > Этот текст меняет цвет при наведении курсора не него и увеличивается при нажатии </p><br>
+                <p  ondblclick=border(this) > Если на этот текст нажать, то вокруг него появиться синяя рамка  </p><br><br>
+                <img src="2.jpg" id="image1" onclick="ImageChange()" width = "400px" height = "300px"><br>
+                <p id='textChange' onclick="TextСhangeImage()"> Ромашки или лилии? Нажми и узнаешь!</p><br>
+                <img src="2.jpg" id="image2" onMouseOver="WidthMore()" onMouseOut="WidthLess()" width = "400px" height = "300px"><br>
+            </div>
+        </body>
+        
+        </html>

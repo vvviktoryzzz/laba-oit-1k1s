@@ -1,0 +1,43 @@
+body
+	{
+	Background-color: #C7603C
+	}
+	h1,h2, h3, span
+	{
+	color:LightPink;
+	font-family: consolas;
+	font-size: 100%;
+	}
+	.A
+	{ 
+	color: #q33419;
+	font-family: matura mt script capitals;
+	font-size: 120%;
+	margin: 20px;
+	letter-spacing: 1px;
+	word-spacing: 2px
+	
+	}
+	#B
+	{
+	color: rgb(176, 196, 222);
+	font-family: constantia;
+	font-size: medium;
+	margin-left: 10px;
+	letter-spacing: 2px;
+	word-spacing: 3px
+	}
+	.c
+	{
+	color: #29063f;
+	font-family: constantia;
+	font-size: 35px;
+	margin-left: 30px;
+	letter-spacing: 3px;
+	word-spacing: 1px
+	}
+	
+	
+	
+	
+	

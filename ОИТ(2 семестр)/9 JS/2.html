@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+          <img src=leti.jpg height="300px" width="400px" id="myimg" onclick="fun()" style = "position: relative; cursor: pointer;">> <!--смещается относительно себя-->
+
+        <script type="text/javascript">
+
+function fun()
+{
+    let startTime = Date.now(); // получить текущее время и дату
+
+let timer = setInterval(function() 
+{
+// сколько времени прошло с начала анимации?
+let timePassed = Date.now() - startTime;
+
+if (timePassed >= 5000)//если прошло больше 5000 милисекунд (или 5 секунд)
+{
+clearInterval(timer); // остановить анимацию
+return;
+}
+
+draw(timePassed);}, 20);
+
+function draw(timePassed) //изменяет положение элемента
+{
+    myimg.style.left = (timePassed / 5) + 'px';
+}}
+
+
+        </script>
+    </body>
+</html>

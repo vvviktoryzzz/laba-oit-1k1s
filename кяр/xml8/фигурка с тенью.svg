@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="166.455mm" height="110.913mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 16645.46 11091.32"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#E31E24}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M4258.37 3034.93l3044.52 0 0 3044.52 -3044.52 0 0 -3044.52z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2420187805376">
+   <g style="clip-path:url(#id0)">
+    <image x="4258.37" y="3034.93" width="3044.52" height="3044.52" xlink:href="фигурка с тенью_Images\фигурка с тенью_ImgID1.png"/>
+   </g>
+  </g>
+  <circle class="fil0" cx="5540.42" cy="4364.68" r="1170.97"/>
+ </g>
+</svg>

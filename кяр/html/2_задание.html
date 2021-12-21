@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+        <style type="text/css">
+		.coffee{
+		  width: 300px; /* Ширина слоя */
+          margin: 7px; /* Значение отступов */
+          padding: 10px; /* Поля вокруг текста */
+          border: 4px solid black; /* Параметры границы */
+          background: #F56E8D; /* Цвет фона */
+		}
+		.coffee {
+          animation: change-color 5s infinite;
+        }
+		@keyframes change-color {
+         0% {
+           background-color: #F56E8D;
+        } 
+         50% {
+          background-color: white;
+        }  
+         100% {
+           background-color: #F56E8D;
+        }
+       }
+		.tea{
+		width: 500px;
+		margin: 17px;
+		padding: 15px;
+		border: 5px dashed #A64300;
+		}
+		.tea{
+		transition: all 1s;
+        cursor: pointer;
+		}
+		.all:hover .tea {
+		 background-color: #97CE68;
+         color: #000;
+		transform: rotate(360deg);
+		}
+		.cacao{
+		 margin: 17px;
+		 padding: 15px;
+		 border: 5px solid #A63C00;
+		 border-radius: 10px;
+		 background: radial-gradient(#FF9A40, #FFCF73);
+		 transition: all 3s;
+         cursor: pointer;
+		}
+		.all:hover .cacao {
+		 background-color: #97CE68;
+         color: #000;
+        transform: scale(0.5);
+		}
+		 </style>
+    
+</head>
+    <body>
+       <div class="all">
+	    <div class="coffee">В начале XX века немецкий химик Эрдманн выделил из зёрен кофе масло, придающее кофе его аромат, которое он назвал «кафеоль». Эрдманну удалось выделить порядка десяти компонентов кафеоля. В 1967 году американские учёные Ф. Готши и М. Уинтергод с помощью молекулярной дистилляции, спектрофотометрии и газовой хроматографии выделили более 220 компонентов</div>
+		<div class="tea">Чай — также сам лист чайного куста, обработанный и подготовленный для приготовления напитка. Подготовка включает предварительную сушку (вяление), скручивание, более или менее длительное ферментативное окисление, окончательную сушку. Прочие операции вводятся в процесс только для производства отдельных видов и сортов чая. </div>
+	    <div class="cacao">Кака?о, или шокола?дное де?рево(лат. Theobroma cacao) — вид вечнозеленых деревьев из рода Теоброма (Theobroma). Ранее этот род относили к семейству Стеркулиевые (Sterculiaceae), сейчас относят к семейству Мальвовые (Malvaceae), подсемейству Byttnerioideae.</div>	   
+	   </div>
+    </body>
+</html>

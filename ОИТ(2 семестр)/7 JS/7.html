@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Форма 2</title>
+<link rel="stylesheet" href="cssfor7.css" type="text/css">
+<script type = "text/javascript">
+function fun(){
+alert("Благодарим за ответ!");
+}
+</script>
+</head>
+<body>
+<form>
+<p class="name">Леди Баг и Супер-Кот</p>
+<p>Леди Баг и Супер-Кот — французско-корейский мультсериал производства Zagtoon и Method Animation. Мультсериал рассказывает про двух парижских подростков, Маринетт Дюпен-Чен и Адриана Агреста, которые превращаются в супергероев Леди Баг и Супер-Кота, чтобы защищать город от суперзлодеев. Создателем мультсериала является Томас Астрюк.</p>
+<img src="375px-Miraculous_Ladybug.png">
+<fieldset> <!--предназначен для группирования элементов формы-->
+<legend><b>Дорогой гость, ответьте на пару вопросов</b></legend>
+<p>1. Нравится ли Вам мультфильм?</p>
+<input type="radio" name="radiobutton" value="y"> Да <br>
+<input type="radio" name="radiobutton" value="f"> Неплохой <br>
+<input type="radio" name="radiobutton" value="n"> Нет
+
+<p>2. Ваш любимый персонаж ?</p>
+<input type="checkbox" name="checkbutton" value="Маринетт Дюпен-Чен">Маринетт Дюпен-Чен
+<input type="checkbox" name="checkbutton" value="Эдриан Агрест">Эдриан Агрест
+<input type="checkbox" name="checkbutton" value="Габриэль Агрест">Габриэль Агрест
+<input type="checkbox" name="checkbutton" value="Натали Санкёр ">Натали Санкёр 
+<input type="checkbox" name="checkbutton" value="Тикки">Тикки
+<input type="checkbox" name="checkbutton" value="Плагг">Плагг
+<input type="checkbox" name="checkbutton" value="Аля Сезар">Аля Сезар
+<input type="checkbox" name="checkbutton" value="Нино Лахифф">Нино Лахифф   
+<input type="checkbox" name="checkbutton" value="Хлоя Буржуа">Хлоя Буржуа
+<input type="checkbox" name="checkbutton" value="Сабрина Ренкомпри">Сабрина Ренкомпри   
+<input type="checkbox" name="checkbutton" value="Джулека Куффен">Джулека Куффен
+<input type="checkbox" name="checkbutton" value="Лука Куффен ">Лука Куффен    
+<p>3.Сколько сезонов вы посмотрели?</p>
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+</select>
+<br>
+<br>
+<input type="reset" value="Очистить">
+<input type="submit" value="Отправить" onclick="fun()">
+</fieldset>
+</form>
+</body>
+</html>
